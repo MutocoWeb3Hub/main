@@ -20,6 +20,7 @@ Mutoco is a robust platform that provides tools and infrastructure for creating 
 - **Easy Token and NFT Creation**: Launch tokens and NFTs without complex setup.
 - **Polygon-Focused**: Native support for the Polygon network, ensuring fast, scalable, and cost-effective transactions.
 - **NFT Gating for Access Control**: Mutoco employs NFT gating to secure all pages except the Shop page. Only verified holders of specified NFTs can access gated content, creating exclusive experiences for community members while protecting privacy and enhancing value.
+- **Shop Page for NFT Minting**: The Shop page enables users to mint NFTs on the Polygon network with a single click. Using JavaScript, users can quickly mint NFTs, making the process straightforward and accessible for everyone.
 - **Real-Time Data Integration**: Mutoco provides real-time data from the Polygon network and smart contracts, giving users up-to-the-minute updates on transactions and token activity.
 - **Market Price Feeds**: To stay updated with the latest market prices, Mutoco integrates with Coinwalletwatch, CoinGecko, and CoinMarketCap APIs, ensuring accurate and timely price information where needed.
 
