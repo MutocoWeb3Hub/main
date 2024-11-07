@@ -1,6 +1,5 @@
 # Mutoco
 
-![Mutoco Logo](https://docs.mutoco.tech/logo.png) <!-- Adjust logo URL if needed -->
 
 Mutoco simplifies the path for communities to build Web3 products that engage members and drive adoption on Polygon. Our mission is to onboard more people to Polygon through the power of tokens and NFTs, making blockchain technology accessible, user-friendly, and community-driven.
 
