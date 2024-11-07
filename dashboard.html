@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <!-- meta tag -->
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+        <meta name="description" content="" />
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="assets/images/fav.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+        <!-- font awesome icon css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+        <!--Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+
+
+        <style>
+        .responsive-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px; /* Small gap between columns */
+      max-width: 1200px; /* Boxed width */
+      padding: 120px 0px; /* Padding to ensure the content doesn't touch the edges */
+      align-items: center; /* Align items to the center for better column alignment */
+      margin: 0px auto; /* Center the row in the middle of the page */
+  }
+  @media (max-width: 768px) {
+      .responsive-row {
+          min-width: 100%; /* Full width on smaller screens */
+          padding: 70px 0px;
+      }
+  }
+  div.responsive-row.mainContent2 {
+    margin-top: -450px;
+  }
+  @media (max-width: 768px) {
+      div.responsive-row.mainContent2 {
+        margin-top: -44px;
+        margin-bottom: -210px;
+      }
+  }
+  .responsive-column {
+      flex: 1;
+      min-width: calc(33.333% - 10px); /* Smaller column */
+      box-sizing: border-box; /* Ensure padding and borders are included in width */
+  }
+
+  .responsive-column.double {
+      flex: 2;
+      min-width: calc(66.666% - 10px); /* Larger column */
+  }
+
+  @media (max-width: 992px) {
+      .responsive-column,
+      .responsive-column.double {
+          min-width: calc(50% - 10px); /* Two columns on medium screens */
+      }
+  }
+
+  @media (max-width: 768px) {
+      .responsive-column,
+      .responsive-column.double {
+          min-width: 100%; /* Full width on smaller screens */
+          padding: 0px 0px;
+      }
+  }
+        .governanc_content_right_card {
+        background-color: #57109a00;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #44c6f2;
+        padding: 15px;
+        font-size: 15px;
+        border: 1px solid;
+        margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            .responsive-column,
+            .responsive-column.double {
+                min-width: 100%;
+            }
+        }
+
+
+        .member-nav a {
+          background: rgb(0 0 0);
+            border-left: 4px solid #009688;
+            border-right: 4px solid #673AB7;
+            padding: 0px 6px 5px 6px;
+            margin-bottom: 10px;
+            margin: 2px;
+}
+        .menu-item {
+          display: flex;
+          align-items: center;
+          padding: 10px 5px;
+          margin: 10px 0;
+          list-style: none;
+          color: white;
+          transition: background-color 0.3s ease, color 0.3s ease;
+          border-radius: 8px;
+        }
+
+        .menu-item:hover {
+          background-color: #323249; /* Light background on hover */
+          color: #007bff; /* Change text color on hover */
+        }
+
+        .menu-item .icon img {
+          height: 50px; /* Set a consistent height for all icons */
+          width: auto; /* Maintain aspect ratio */
+          transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover .icon img {
+          transform: scale(1.1); /* Slight zoom-in on hover */
+        }
+
+        .menu-text {
+          font-size: 18px;
+          font-weight: 600;
+          text-transform: uppercase; /* Capitalize menu items */
+          letter-spacing: 0.5px;
+          transition: color 0.3s ease;
+        }
+
+        .menu-item:hover .menu-text {
+          color: #007bff; /* Make text blue on hover */
+        }
+
+        /* Adjustments for mobile screens */
+        @media (max-width: 768px) {
+          .menu-text {
+            font-size: 16px;
+          }
+
+          .menu-item .icon img {
+            height: 40px; /* Adjust icon size for mobile */
+          }
+        }
+        .icon:before {
+
+            content: none;
+        }
+        .gamfi-footer-section .footer-area {
+            margin-top: 250px !important;
+            padding-top: 0px !important;
+        }
+        .claim_rewords_btn {
+height: 60px;
+width: 100%;
+font-family: "Russo One", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+border-radius: 20px;
+outline: none;
+background-color: #1d2757;
+}
+
+a.logout:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Darker red on hover */
+  color: #fff; /* Ensure the text stays white */
+}
+.main {
+  flex-grow: 1; /* Allows the main section to take up the remaining space */
+  display: flex;
+}
+        </style>
+
+    </head>
+    <body>
+        <!--Preloader area start here-->
+        <div class="loader_first">
+            <div class="circular-spinner"></div>
+        </div>
+        <!--Preloader area End here-->
+        <div class="home_v4_bg">
+
+        </div>
+        <div class="home_v4_body_content">
+
+
+        <div class="home_v4_body_items">
+          <!--Header Start-->
+          <header id="gamfi-header" class="gamfi-header-section transparent-header">
+            <div class="menu-area menu-sticky">
+              <div class="container">
+                <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                  <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                      <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="header-menu">
+
+                    </div>
+                  </div>
+                  <div class="gamfi-btn-area">
+                    <ul>
+                      <li>
+                        <a id="nav-expander" class="nav-expander bar" href="#">
+                          <div class="bar">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                          </div>
+                        </a>
+                      </li>
+
+                      <!-- Desktop Connect Button -->
+                      <li class="connect-btn-wrapper">
+                        <button type="button" id="connectButtonDesktop" class="connect-btn readon white-btn hover-shape">
+                          <img src="assets/images/icons/connect.png" alt="Icon">
+                          <span id="buttonTextDesktop" class="btn-text">Connect Wallet</span>
+                          <span class="hover-shape1"></span>
+                          <span class="hover-shape2"></span>
+                          <span class="hover-shape3"></span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+              <div class="close-btn">
+                <a id="nav-close2" class="nav-close">
+                  <div class="line">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-logo mb-20">
+                <a href="index.html"><img src="assets/images/fav.png" alt=""></a>
+              </div>
+              <ul class="nav-menu">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Links</a></li>
+                <!-- Mobile Connect Button -->
+                <li class="connect-btn-wrapper">
+                  <button type="button" id="connectButtonMobile" class="connect-btn readon hover-shape">
+                    <img src="assets/images/icons/connect.png" alt="Icon">
+                    <span id="buttonTextMobile" class="btn-text">Connect Wallet</span>
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+           <!--Header End-->
+           <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+           <script>
+               const POLYGON_CHAIN_ID = '0x89'; // Polygon mainnet chain ID
+               const POLYGON_RPC_URL = 'https://polygon-rpc.com'; // Updated RPC URL
+
+               const contractAddresses = {
+                   "Royal": "0x0ff1e228e6a95aa69c76bdcb366e3e6fe1a614d3", // Example contract address 1
+                   "Pro": "0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166",  // Example contract address 2
+                   "Nodeme": "0x870467a76281b5db1e0d861c3d113f3829861104" // Nodeme NFT contract
+               };
+
+               const ABI = [
+                   {
+                       "constant": true,
+                       "inputs": [{"name": "_owner", "type": "address"}],
+                       "name": "balanceOf",
+                       "outputs": [{"name": "", "type": "uint256"}],
+                       "type": "function"
+                   }
+               ];
+
+               function formatWalletAddress(address) {
+                   return `${address.slice(0, 6)}...${address.slice(-4)}`;
+               }
+
+               function updateStatusAndWalletColor(status, walletAddressElement, statusTextElement) {
+                 const levelIconElement = document.querySelector('.level-icon'); // Select the image element
+
+                 if (status === 'MDX Royal') {
+                   statusTextElement.style.color = 'yellow';
+                   walletAddressElement.style.color = '#03a9f4';
+                   levelIconElement.src = 'assets/images/dashlogoroyal.png'; // Set image for Royal
+                 } else if (status === 'MDX Pro') {
+                   statusTextElement.style.color = '#03a9f4';
+                   walletAddressElement.style.color = '#03a9f4';
+                   levelIconElement.src = 'assets/images/dashlogopro.png'; // Set image for Pro
+                 } else {
+                   statusTextElement.style.color = '';
+                   walletAddressElement.style.color = '';
+                   levelIconElement.src = 'assets/images/dashlogodefault.png'; // Default image if no status
+                 }
+               }
+
+               async function checkNftOwnership(account) {
+                   let web3 = new Web3(new Web3.providers.HttpProvider(POLYGON_RPC_URL));
+                   console.log('Checking NFT ownership on Polygon network...');
+
+                   let hasRoyal = false;
+                   let hasPro = false;
+
+                   for (let [status, address] of Object.entries(contractAddresses)) {
+                       if (status === "Nodeme") continue; // Skip Nodeme for now, we will handle it separately
+                       let contract = new web3.eth.Contract(ABI, address);
+                       let balance = await contract.methods.balanceOf(account).call();
+                       console.log(`Contract: ${address}, Balance: ${balance}`);
+                       if (parseInt(balance) > 0) {
+                           if (status === "Royal") {
+                               hasRoyal = true;
+                           } else if (status === "Pro") {
+                               hasPro = true;
+                           }
+                       }
+                   }
+
+                   if (hasRoyal) return "MDX Royal";
+                   if (hasPro) return "MDX Pro";
+                   return null;
+               }
+
+               async function checkNodemeNfts(account) {
+                   let web3 = new Web3(new Web3.providers.HttpProvider(POLYGON_RPC_URL));
+                   let contract = new web3.eth.Contract(ABI, contractAddresses.Nodeme);
+                   let balance = await contract.methods.balanceOf(account).call();
+                   return parseInt(balance);
+               }
+
+               async function connectWallet(buttonTextId, connectButtonId) {
+                   const buttonText = document.getElementById(buttonTextId);
+                   const connectButton = document.getElementById(connectButtonId);
+                   const mainContent = document.querySelector('.mainContent');
+                   const mainContent2 = document.querySelector('.mainContent2');
+                   const walletAddressElement = document.getElementById('walletAddress');
+                   const statusTextElement = document.getElementById('statusText');
+                   const nodemeNftsCountElement = document.getElementById('nodemeNftsCount');
+
+                   if (!connectButton || !mainContent || !mainContent2) {
+                       console.error('Connect button, main content, or mainContent2 not found!');
+                       return;
+                   }
+
+                   if (typeof window.ethereum !== 'undefined') {
+                       try {
+                           const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+                           let connectedAccount;
+
+                           if (accounts.length === 0) {
+                               const requestedAccounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                               connectedAccount = requestedAccounts[0];
+                           } else {
+                               connectedAccount = accounts[0];
+                           }
+
+                           console.log('Connected account:', connectedAccount);
+                           walletAddressElement.textContent = formatWalletAddress(connectedAccount);
+                           buttonText.textContent = 'Checking NFTs...';
+
+                           const status = await checkNftOwnership(connectedAccount);
+                           const nodemeNftsCount = await checkNodemeNfts(connectedAccount);
+                           nodemeNftsCountElement.textContent = nodemeNftsCount;
+
+                           if (status) {
+                               buttonText.textContent = 'Access Granted';
+                               connectButton.style.backgroundColor = 'green';
+                               localStorage.setItem('connectedAccount', connectedAccount);
+                               statusTextElement.textContent = status;
+                               updateStatusAndWalletColor(status, walletAddressElement, statusTextElement); // Update text colors
+                               mainContent.style.display = 'flex';
+                               mainContent2.style.display = 'flex';
+                           } else {
+                               buttonText.textContent = 'Access Limited';
+                               connectButton.style.backgroundColor = 'red';
+                               mainContent.style.display = 'none';
+                               mainContent2.style.display = 'none';
+                           }
+
+                       } catch (error) {
+                           console.error('Error connecting to MetaMask or fetching data:', error);
+                           buttonText.textContent = 'Access Limited';
+                           connectButton.style.backgroundColor = 'red';
+                           mainContent.style.display = 'none';
+                           mainContent2.style.display = 'none';
+                       }
+                   } else {
+                       alert('MetaMask is not installed. Please install it from https://metamask.io/');
+                       buttonText.textContent = 'Access Limited';
+                       connectButton.style.backgroundColor = 'red';
+                       mainContent.style.display = 'none';
+                       mainContent2.style.display = 'none';
+                   }
+               }
+
+               async function updateButtonAndMainContentState(connectedAccount, buttonText, connectButton, mainContent, mainContent2) {
+                   buttonText.textContent = 'Checking NFTs...';
+                   const hasNFT = await checkNftOwnership(connectedAccount);
+
+                   if (hasNFT) {
+                       buttonText.textContent = 'Access Granted';
+                       connectButton.style.backgroundColor = 'green';
+                       mainContent.style.display = 'flex';
+                       mainContent2.style.display = 'flex';
+                   } else {
+                       buttonText.textContent = 'Access Limited';
+                       connectButton.style.backgroundColor = 'red';
+                       mainContent.style.display = 'none';
+                       mainContent2.style.display = 'none';
+                       localStorage.removeItem('connectedAccount');
+                   }
+               }
+
+               async function switchToPolygonNetwork() {
+                   try {
+                       await window.ethereum.request({
+                           method: 'wallet_switchEthereumChain',
+                           params: [{ chainId: POLYGON_CHAIN_ID }],
+                       });
+                   } catch (switchError) {
+                       if (switchError.code === 4902) {
+                           try {
+                               await window.ethereum.request({
+                                   method: 'wallet_addEthereumChain',
+                                   params: [
+                                       {
+                                           chainId: POLYGON_CHAIN_ID,
+                                           chainName: 'Polygon Mainnet',
+                                           rpcUrls: [POLYGON_RPC_URL],
+                                           nativeCurrency: {
+                                               name: 'MATIC',
+                                               symbol: 'MATIC',
+                                               decimals: 18,
+                                           },
+                                           blockExplorerUrls: ['https://polygonscan.com/'],
+                                       },
+                                   ],
+                               });
+                           } catch (addError) {
+                               console.error('Failed to add Polygon network to MetaMask:', addError);
+                               throw addError;
+                           }
+                       } else {
+                           console.error('Failed to switch to the Polygon network:', switchError);
+                           throw switchError;
+                       }
+                   }
+               }
+
+               async function handleAccountChanged(accounts) {
+                   const connectedAccount = accounts[0];
+                   const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+                   const buttonTextMobile = document.getElementById('buttonTextMobile');
+                   const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+                   const connectButtonMobile = document.getElementById('connectButtonMobile');
+                   const walletAddressElement = document.getElementById('walletAddress');
+                   const statusTextElement = document.getElementById('statusText');
+                   const nodemeNftsCountElement = document.getElementById('nodemeNftsCount');
+
+                   if (!connectButtonDesktop || !connectButtonMobile) {
+                       console.error('One or both of the connect buttons are missing from the DOM.');
+                       return;
+                   }
+
+                   if (connectedAccount) {
+                       walletAddressElement.textContent = formatWalletAddress(connectedAccount);
+                       const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+                       if (chainId !== POLYGON_CHAIN_ID) {
+                           await switchToPolygonNetwork();
+                       }
+
+                       const hasNFT = await checkNftOwnership(connectedAccount);
+                       const nodemeNftsCount = await checkNodemeNfts(connectedAccount);
+                       nodemeNftsCountElement.textContent = nodemeNftsCount;
+
+                       updateConnectButton(hasNFT, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile);
+                   }
+               }
+
+               function updateConnectButton(hasAccess, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile) {
+                   const mainContent = document.querySelector('.mainContent');
+                   const mainContent2 = document.querySelector('.mainContent2');
+
+                   if (hasAccess) {
+                       buttonTextDesktop.textContent = 'Access Granted';
+                       buttonTextMobile.textContent = 'Access Granted';
+                       connectButtonDesktop.style.backgroundColor = 'green';
+                       connectButtonMobile.style.backgroundColor = 'green';
+                       mainContent.style.display = 'flex';
+                       mainContent2.style.display = 'flex';
+                   } else {
+                       buttonTextDesktop.textContent = 'Access Limited';
+                       buttonTextMobile.textContent = 'Access Limited';
+                       connectButtonDesktop.style.backgroundColor = 'red';
+                       connectButtonMobile.style.backgroundColor = 'red';
+                       mainContent.style.display = 'none';
+                       mainContent2.style.display = 'none';
+                   }
+               }
+
+               async function disconnectWallet() {
+                   const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+                   const buttonTextMobile = document.getElementById('buttonTextMobile');
+                   const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+                   const connectButtonMobile = document.getElementById('connectButtonMobile');
+                   const mainContent = document.querySelector('.mainContent');
+                   const mainContent2 = document.querySelector('.mainContent2');
+                   const walletAddressElement = document.getElementById('walletAddress');
+                   const statusTextElement = document.getElementById('statusText');
+                   const nodemeNftsCountElement = document.getElementById('nodemeNftsCount');
+
+                   buttonTextDesktop.textContent = 'Connect Wallet';
+                   buttonTextMobile.textContent = 'Connect Wallet';
+                   connectButtonDesktop.style.backgroundColor = '';
+                   connectButtonMobile.style.backgroundColor = '';
+                   walletAddressElement.textContent = 'Wallet Address';
+                   statusTextElement.textContent = '';
+                   nodemeNftsCountElement.textContent = '0';
+                   mainContent.style.display = 'none';
+                   mainContent2.style.display = 'none';
+
+                   localStorage.removeItem('connectedAccount');
+               }
+
+               window.addEventListener('load', async function () {
+                   const connectedAccount = localStorage.getItem('connectedAccount');
+                   const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+                   const buttonTextMobile = document.getElementById('buttonTextMobile');
+                   const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+                   const connectButtonMobile = document.getElementById('connectButtonMobile');
+                   const walletAddressElement = document.getElementById('walletAddress');
+                   const statusTextElement = document.getElementById('statusText');
+                   const nodemeNftsCountElement = document.getElementById('nodemeNftsCount');
+                   const mainContent = document.querySelector('.mainContent');
+                   const mainContent2 = document.querySelector('.mainContent2');
+
+                   if (connectedAccount) {
+                       walletAddressElement.textContent = formatWalletAddress(connectedAccount);
+                       buttonTextDesktop.textContent = 'Checking NFTs...';
+                       buttonTextMobile.textContent = 'Checking NFTs...';
+
+                       const status = await checkNftOwnership(connectedAccount);
+                       const nodemeNftsCount = await checkNodemeNfts(connectedAccount);
+                       nodemeNftsCountElement.textContent = nodemeNftsCount;
+
+                       if (status) {
+                           buttonTextDesktop.textContent = 'Access Granted';
+                           buttonTextMobile.textContent = 'Access Granted';
+                           connectButtonDesktop.style.backgroundColor = 'green';
+                           connectButtonMobile.style.backgroundColor = 'green';
+                           statusTextElement.textContent = status;
+                           updateStatusAndWalletColor(status, walletAddressElement, statusTextElement); // Update text colors
+                           mainContent.style.display = 'flex';
+                           mainContent2.style.display = 'flex';
+                       } else {
+                           buttonTextDesktop.textContent = 'Access Limited';
+                           buttonTextMobile.textContent = 'Access Limited';
+                           connectButtonDesktop.style.backgroundColor = 'red';
+                           connectButtonMobile.style.backgroundColor = 'red';
+                           mainContent.style.display = 'none';
+                           mainContent2.style.display = 'none';
+                       }
+
+                       await handleAccountChanged([connectedAccount]);
+                   } else {
+                       buttonTextDesktop.textContent = 'Connect Wallet';
+                       buttonTextMobile.textContent = 'Connect Wallet';
+                       mainContent.style.display = 'none';
+                       mainContent2.style.display = 'none';
+                   }
+
+                   if (window.ethereum) {
+                       window.ethereum.on('accountsChanged', async (accounts) => {
+                           await disconnectWallet();
+                           await handleAccountChanged(accounts);
+                       });
+                       window.ethereum.on('chainChanged', async () => {
+                           try {
+                               await switchToPolygonNetwork();
+                               const connectedAccount = localStorage.getItem('connectedAccount');
+                               if (connectedAccount) {
+                                   const hasNFT = await checkNftOwnership(connectedAccount);
+                                   if (hasNFT) {
+                                       mainContent.style.display = 'flex';
+                                       mainContent2.style.display = 'flex';
+                                   } else {
+                                       mainContent.style.display = 'none';
+                                       mainContent2.style.display = 'none';
+                                   }
+                                   await handleAccountChanged([connectedAccount]);
+                               }
+                           } catch (error) {
+                               console.error('Error handling chain change:', error);
+                           }
+                       });
+                   }
+               });
+
+               window.addEventListener('DOMContentLoaded', function () {
+                   document.getElementById('connectButtonDesktop').addEventListener('click', function () {
+                       connectWallet('buttonTextDesktop', 'connectButtonDesktop');
+                   });
+
+                   document.getElementById('connectButtonMobile').addEventListener('click', function () {
+                       connectWallet('buttonTextMobile', 'connectButtonMobile');
+                   });
+               });
+           </script>
+
+
+<main class="main">
+  </main>
+           <!-- Responsive Row -->
+                   <div class="responsive-row mainContent" style="align-items: flex-start;">
+                       <div class="responsive-column">
+                           <!-- Content for the larger column -->
+                           <div class="governanc_content_right">
+                     <div class="governanc_content_right_card p-0">
+                         <div class="px-4 pt-4">
+                             <div class="level-icon-wrap"><img title="NFT Holder" class="level-icon" src="assets/images/dashlogoroyal.png" style="height:100px;margin-bottom:20px;"></div>
+                         <h2>Welcome <span><img src="assets/images/steps.png" alt="Steps Image" class="img-fluid"></span></h2>
+                            <p class="fs-3 m-0 text-neon-green" id="walletAddress">Wallet Address</p>
+                            <style>
+                                    .text-neon-green {
+                                        color: ##03a9f4;
+                                        font-size: 22px;
+                                    }
+                                    .status-royal {
+                                      color: yellow;
+                                    }
+                                    .status-pro {
+                                      color: #03a9f4;
+                                    }
+                           </style>
+                         </div>
+
+                         <div class="bg-darken-20 p-4" style="color:white;">
+                             <ul class="m-0">
+                               <li><span>COMMUNITY STATUS: </span>
+         <strong>
+             <span id="statusText"></span>
+         </strong>
+       </li>
+       <li><span>NODEME NFTS: </span>
+       <strong class="text-neon-green" id="nodemeNftsCount" style="color:#03a9f4;">0</strong>
+       </li>
+
+
+                             </ul>
+
+                         </div>
+                         <div class="p-2">
+
+                                                 </div>
+
+                     </div>
+                 </div>
+                 <style>
+       #usdtBalanceRoyalties::after {
+           content: "$ USDT";
+           font-weight: bold;
+           color: #03a9f4;
+       }
+
+       #polBalanceRoyalties::after {
+           content: " POL";
+           font-weight: bold;
+           color: #673ab7;
+       }
+
+       .balance-label {
+           font-weight: bold;
+           color: white;
+           font-size: 14px;
+       }
+
+       .balance-value {
+           color: #03a9f4;
+           font-size: 18px;
+       }
+
+       .balance-value-pol {
+           color: #673AB7;
+           font-size: 18px;
+       }
+
+       .balance-card {
+           background: #00020ccc;
+           border-radius: 20px;
+           width: 95%;
+           margin-left: 10px;
+           padding: 20px;
+           border-radius: 20px;
+       }
+   </style>
+   <h3 style="color:white;">Royalties Balances</h3>
+   <div class="mt-3 px-3 py-2 balance-card">
+
+
+       <div class="balance-section mt-2">
+           <span class="balance-label">POL Rewards:</span>
+           <strong class="balance-value-pol balance-container" id="polBalanceRoyalties">
+               0
+           </strong>
+       </div>
+
+       <div class="balance-section mb-2">
+           <span class="balance-label">USDT Rewards:</span>
+           <strong class="balance-value balance-container" id="usdtBalanceRoyalties">
+               0
+           </strong>
+       </div>
+
+
+       <button onclick="window.location='https://polygonscan.com/tokenholdings?a=0x32908ebA4c6ed4F91A0CAA2162F9623FfA69402A';" class="claim_rewords_btn black-shape-big mb-4 mt-3">
+           ROYALTIES WALLET
+           <span class="hover-shape1"></span>
+           <span class="hover-shape2"></span>
+           <span class="hover-shape3"></span>
+       </button>
+   </div>
+
+   <script>
+       const web3 = new Web3('https://polygon-mainnet.infura.io/v3/577e376ab4f54accb9b091f152780c5f');
+
+       const USDT_ABI = [
+           {
+               "constant": true,
+               "inputs": [{ "name": "_owner", "type": "address" }],
+               "name": "balanceOf",
+               "outputs": [{ "name": "balance", "type": "uint256" }],
+               "payable": false,
+               "stateMutability": "view",
+               "type": "function"
+           }
+       ];
+       const POL_ABI = [
+           {
+               "constant": true,
+               "inputs": [{ "name": "_owner", "type": "address" }],
+               "name": "balanceOf",
+               "outputs": [{ "name": "balance", "type": "uint256" }],
+               "payable": false,
+               "stateMutability": "view",
+               "type": "function"
+           }
+       ];
+
+       const USDT_ADDRESS = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'; // USDT Contract Address
+       const POL_ADDRESS = '0x0000000000000000000000000000000000001010'; // POL Contract Address (Replace with actual POL contract address)
+       const walletAddress = '0x32908ebA4c6ed4F91A0CAA2162F9623FfA69402A'; // Your wallet address
+
+       const usdtContract = new web3.eth.Contract(USDT_ABI, USDT_ADDRESS);
+       const polContract = new web3.eth.Contract(POL_ABI, POL_ADDRESS);
+
+       async function getUSDTBalance() {
+           try {
+               const balance = await usdtContract.methods.balanceOf(walletAddress).call();
+               const balanceInUSDT = web3.utils.fromWei(balance, 'mwei'); // USDT has 6 decimals
+               document.getElementById('usdtBalanceRoyalties').innerText = balanceInUSDT;
+           } catch (error) {
+               console.error(error);
+           }
+       }
+
+       async function getPOLBalance() {
+           try {
+               const balance = await polContract.methods.balanceOf(walletAddress).call();
+               const balanceInPOL = web3.utils.fromWei(balance, 'ether'); // POL uses 18 decimals
+               document.getElementById('polBalanceRoyalties').innerText = balanceInPOL;
+           } catch (error) {
+               console.error(error);
+           }
+       }
+
+       getUSDTBalance();
+       getPOLBalance();
+   </script>
+
+                       </div>
+
+
+
+                       <div class="responsive-column double">
+                           <!-- Content for the smaller column -->
+                           <div class="carousel-replacement">
+                               <a><img src="assets/images/ddashnew.png" class="d-block w-100" alt="Slide Image"></a>
+                           </div>
+
+
+
+
+                    <div class="responsive-column double">
+                      <div id="raffles" class="bg-darken-20">
+                        <div class="mt-3">
+                          <div class="d-flex px-4 py-2 align-items-center justify-content-between" style="background-color: #1d2757; color: white;">
+                            <strong style="font-weight: 600;">Rafflecraft</strong> <a href="" class="btn btn-primary bg-purple btn-sm">SOON</a></div>
+                            <div class="carousel-replacement">
+                                <a><img src="assets/images/COMINGSOONFB.png" class="d-block w-100" alt="Slide Image"></a>
+                            </div>
+                                     </div>
+                                   </div>
+
+                   </div>
+
+
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+                </div>
+
+                   </div>
+
+            <!-- Responsive Row -->
+              <div class="responsive-row mainContent2" style="padding: 0px 0px;">
+                <div class="responsive-column">
+
+                    <!-- Content for the larger column -->
+                    <div class="governanc_content_right">
+                        <h3 class="text-center">dApps Menu</h3>
+          <div>
+
+              <div class="mb-2 member-nav" >
+
+                <a href="trading.html" class="menu-item d-flex align-items-center">
+                  <span class="icon me-3">
+                    <img src="assets/images/dashicons/AICopyTrading.png" alt="AI Copy Trading Icon" class="img-fluid" style="height: 40px;">
+                  </span>
+                  <span>Copy Trade</span>
+                </a>
+
+                <a href="nodeme.html" class="menu-item d-flex align-items-center">
+                  <span class="icon me-3">
+                    <img src="assets/images/dashicons/nodeme.png" alt="NodeMe Icon" class="img-fluid" style="height: 40px;">
+                  </span>
+                  <span>NodeMe NFTs</span>
+                </a>
+
+                <a href="javascript:void(0);" class="menu-item d-flex align-items-center" role="button" aria-disabled="true" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming Soon" style="opacity: 0.5; cursor: not-allowed;">
+                  <span class="icon me-3">
+                    <img src="assets/images/dashicons/launchpad.png" alt="SeedMe Icon" class="img-fluid" style="height: 40px;">
+                  </span>
+                  <span>LaunchPad</span>
+                </a>
+
+
+                <a href="javascript:void(0);" class="menu-item d-flex align-items-center" role="button" aria-disabled="true" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming Soon" style="opacity: 0.5; cursor: not-allowed;">
+                  <span class="icon me-3">
+                    <img src="assets/images/dashicons/nodepad.png" alt="Royalties Icon" class="img-fluid" style="height: 40px;">
+                  </span>
+                  <span>NodePad</span>
+                </a>
+
+                <a href="javascript:void(0);" class="menu-item d-flex align-items-center" role="button" aria-disabled="true" data-bs-toggle="tooltip" data-bs-placement="top" title="Coming Soon" style="opacity: 0.5; cursor: not-allowed;">
+                  <span class="icon me-3">
+                    <img src="assets/images/dashicons/bid.png" alt="Royalties Icon" class="img-fluid" style="height: 40px;">
+                  </span>
+                  <span>MetaBID</span>
+                </a>
+
+
+
+                         <a href="javascript: logout();" class="d-flex align-items-center logout" style="background-color: rgba(255, 0, 0, 0.43); padding: 10px 9px; border-radius: 5px; color: white; text-decoration: none; transition: background-color 0.3s ease;">
+           <span class="me-3">
+             <i class="fa fa-sign-out fa-fw" style="font-size: 30px;"></i>
+           </span>
+           <span>LOGOUT</span>
+         </a>
+
+<script>
+async function logout() {
+// Disconnect wallet logic
+if (window.ethereum) {
+try {
+// Clear localStorage and reset the UI
+localStorage.removeItem('connectedAccount');
+const walletAddressElement = document.getElementById('walletAddress');
+const statusTextElement = document.getElementById('statusText');
+const nodemeNftsCountElement = document.getElementById('nodemeNftsCount');
+const buttonText = document.getElementById('buttonText');
+const connectButton = document.getElementById('connectButton');
+
+buttonText.textContent = 'Connect Wallet';
+connectButton.style.backgroundColor = '';
+walletAddressElement.textContent = 'Wallet Address';
+statusTextElement.textContent = '';
+nodemeNftsCountElement.textContent = '0';
+
+document.querySelectorAll('.mainContent').forEach(element => {
+    element.classList.add('hidden-content');
+});
+
+document.querySelectorAll('.sc-button').forEach(button => {
+    button.style.display = 'none';
+});
+
+// If needed, you can also reset provider connections here
+// For example, MetaMask doesn't have a built-in disconnect method, but you can reset your dApp's state
+
+// Redirect to the new URL
+window.location.href = 'https://mutoco.tech';
+} catch (error) {
+console.error('Error during logout:', error);
+}
+} else {
+console.error('Ethereum provider not found');
+}
+}
+</script>
+
+              </div>
+          </div>
+      </div>
+   </div>
+
+
+       <div class="responsive-column double">
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+            <!-- Footer Section Start -->
+            <div class="gamfi-footer-section gamfi_home_v4_footer_section bg-transparent">
+                <div class="footer-area home_v4_footer_area footer-bg-transparent">
+                    <div class="container">
+                        <div class="sec-heading text-center">
+                            <div class="sub-inner mb-52 mb-mb-30">
+                                <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image" />
+                                <span class="sub-title white-color">Find us on Social</span>
+                                <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                            </div>
+                        </div>
+
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+                                    <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                                        <ul class="footer-icon-list">
+                                            <li><a href="https://x.com/MutocoTech"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://discord.gg/ehCmQCDNrC"><i class="fab fa-discord"></i></a></li>
+                                            <li><a href="https://medium.com/@mutocoweb3"><i class="fab fa-medium"></i></a></li>
+                                            <li><a href="https://github.com/MutocoWeb3Hub"><i class="fab fa-github"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                        <div class="footer-logo text-center mb-45">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" alt="Footer-logo">
+                            </a>
+                        </div>
+
+                        <div class="copyright-area text-center mb-0">
+                            <div class="dsc mb-37 md-mb-25">Copyright © 2024. All Rights Reserved by
+                                <a target="_blank" class="gafi" href="#">MUTOCO</a>
+                            </div>
+                        </div>
+                        <div class="scrollup text-center">
+                            <a href="#gamfi-header"><i class="icon-arrow_up"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Section End -->
+        </div>
+        </div>
+        <!-- home4 BG -->
+
+
+
+
+
+
+
+        <!-- Meta Mask Connect -->
+        <script src="assets/js/web3.min.js"></script>
+        <script src="assets/js/metamask.js"></script>
+
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+
+        <!-- jquery counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <!-- Time Counter js -->
+        <script src="assets/js/time-counter.js"></script>
+        <script src="assets/js/metamaskhandler.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+        <!-- slickSlider js -->
+        <script src="assets/js/slick.min.js"></script>
+
+        <!-- home 4 JS -->
+        <script src="assets/js/custom/home4.js"></script>
+    </body>
+</html>

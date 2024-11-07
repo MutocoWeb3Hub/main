@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tag -->
+        <meta charset="utf-8" />
+        <title>MUTOCO</title>
+        <meta name="description" content="" />
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="assets/images/fav.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+        <!-- font awesome icon css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+        <!--Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+        <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    </head>
+    <body>
+<style>
+.loader_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.shining-text-spinner {
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 10px;
+}
+
+.shining-text-spinner span {
+    position: relative;
+    display: inline-block;
+    animation: scaleUp 1s ease-in-out infinite, colorChange 2s ease-in-out infinite;
+    transform-origin: center bottom; /* Make it scale from the bottom center */
+
+}
+
+/* Scale effect for letters */
+@keyframes scaleUp {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Letters slightly grow */
+    }
+}
+
+/* Color transition effect for letters */
+@keyframes colorChange {
+    0% { color: #ff0000; }
+    20% { color: #ffa500; }
+    40% { color: #ffff00; }
+    60% { color: #008000; }
+    80% { color: #0000ff; }
+    100% { color: #4b0082; }
+}
+
+/* Staggered animation delays for each letter */
+.shining-text-spinner span:nth-child(1) {
+    animation-delay: 0s;
+}
+.shining-text-spinner span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.shining-text-spinner span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.shining-text-spinner span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.shining-text-spinner span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.shining-text-spinner span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+/* Shine effect moving across the text */
+.shining-text-spinner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from outside the left */
+    height: 100%;
+    width: 300%; /* Ensure wide coverage */
+    background: transparent;
+    animation: shining 4s ease-in-out infinite;
+}
+
+@keyframes shining {
+    0% {
+        left: -100%; /* Start from outside the left */
+    }
+    100% {
+        left: 100%; /* Move to the outside right */
+    }
+}
+.buttons-container {
+    display: flex; /* Use flexbox to align buttons horizontally */
+    gap: 10px; /* Optional: Add some space between the buttons */
+    align-items: center; /* Align buttons vertically in the middle */
+}
+
+.gamfi_v2_hero_btns {
+    display: inline-block; /* Ensure buttons are treated as inline-blocks */
+}
+
+/* Ensure that when dashboardButton is hidden, the Apply Project button takes its place */
+#dashboardButton {
+    transition: display 0.3s ease; /* Optional: smooth transition when showing/hiding */
+}
+
+@media (max-width: 768px) {
+    .gamfi_v2_hero_right {
+        margin-top: -67px;
+    }
+}
+.gamfi_v2_hero_left h2 {
+
+    width: 92%;
+}
+
+.market_cap_sect {
+min-height: 115px !important;
+}
+@media (max-width: 768px) {
+    .apply-project-btn {
+      margin-left: -10px;
+    }
+}
+.gamfi-header-section .mobile-navbar-menu .nav-menu li a {
+    color: #ffffff !important;
+      border-bottom: 1px solid white;
+}
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line span {
+    background: #ffffff;
+}
+.white-bg-btn {
+    background: #673AB7 !important;
+    color: #83b351;
+    border: 2px solid #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px !important;
+}
+.btn-info {
+    width: 100% !important;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    background-color: #673AB7 !important;
+    border: 1px solid white;
+}
+@media (max-width: 768px) {
+    .nav-menu .connect-btn {
+        width: 100%;
+    }
+}
+
+</style>
+<!-- Preloader area start here -->
+<div class="loader_first">
+    <div class="shining-text-spinner">
+        <span>M</span>
+        <span>U</span>
+        <span>T</span>
+        <span>O</span>
+        <span>C</span>
+        <span>O</span>
+    </div>
+</div>
+<!-- Preloader area End here -->
+
+
+        <div class="gafi_body">
+
+        <div class="gamfi_header_v2">
+
+          <!--Header Start-->
+          <header id="gamfi-header" class="gamfi-header-section transparent-header">
+            <div class="menu-area menu-sticky">
+              <div class="container">
+                <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                  <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                      <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="header-menu">
+                      <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#dapps-section">DApps</a></li>
+                        <li><a href="#faqs-section">FAQs</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="gamfi-btn-area">
+                    <ul>
+                      <li>
+                        <a id="nav-expander" class="nav-expander bar" href="#">
+                          <div class="bar">
+                            <span class="dot1"></span>
+                            <span class="dot2"></span>
+                            <span class="dot3"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="buy-token">
+                        <a class="readon white-bg-btn" href="shop.html">
+                          <span class="btn-text">GET NFT </span>
+
+                          <span class="hover-shape1"></span>
+                          <span class="hover-shape2"></span>
+                          <span class="hover-shape3"></span>
+                        </a>
+
+                      </li>
+                      <!-- Desktop Connect Button -->
+                      <li class="connect-btn-wrapper">
+                        <button id="connectButtonDesktop" class="connect-btn readon white-btn hover-shape">
+                          <img src="assets/images/icons/connect.png" alt="Icon">
+                          <span id="buttonTextDesktop" class="btn-text">Connect Wallet</span>
+                          <span class="hover-shape1"></span>
+                          <span class="hover-shape2"></span>
+                          <span class="hover-shape3"></span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+              <div class="close-btn">
+                <a id="nav-close2" class="nav-close">
+                  <div class="line">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="sidebar-logo mb-20">
+                <a href="index.html"><img src="assets/images/fav.png" alt=""></a>
+              </div>
+              <ul class="nav-menu">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#dapps-section">DApps</a></li>
+                <li><a href="#faqs-section">Faqs</a></li>
+                <li class="buy-token">
+                  <a class="btn btn-info" href="shop.html">
+                    <span class="btn-text">GET NFT </span>
+
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                  </a>
+
+                </li>
+                <!-- Mobile Connect Button -->
+                <li class="connect-btn-wrapper">
+                  <button type="button" id="connectButtonMobile" class="connect-btn readon hover-shape">
+                    <img src="assets/images/icons/connect.png" alt="Icon">
+                    <span id="buttonTextMobile" class="btn-text">Connect Wallet</span>
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                  </button>
+                </li>
+
+              </ul>
+            </nav>
+          </header>
+
+           <!--Header End-->
+           <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+           <script>
+             const POLYGON_CHAIN_ID = '0x89'; // Polygon mainnet chain ID
+             const POLYGON_RPC_URL = 'https://polygon-rpc.com'; // Updated RPC URL
+
+             async function checkNftOwnership(account) {
+               const contractAddresses = [
+                 "0x0ff1e228e6a95aa69c76bdcb366e3e6fe1a614d3", // Example contract address 1
+                 "0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166"  // Example contract address 2
+               ];
+
+               const ABI = [
+                 {
+                   "constant": true,
+                   "inputs": [{"name": "_owner", "type": "address"}],
+                   "name": "balanceOf",
+                   "outputs": [{"name": "", "type": "uint256"}],
+                   "type": "function"
+                 }
+               ];
+
+               let web3 = new Web3(new Web3.providers.HttpProvider(POLYGON_RPC_URL));
+               console.log('Checking NFT ownership on Polygon network...');
+
+               for (let address of contractAddresses) {
+                 let contract = new web3.eth.Contract(ABI, address);
+                 let balance = await contract.methods.balanceOf(account).call();
+                 console.log(`Contract: ${address}, Balance: ${balance}`);
+                 if (parseInt(balance) > 0) {
+                   return true; // Account owns NFTs
+                 }
+               }
+               return false; // No NFTs found
+             }
+
+             async function connectWallet(buttonTextId, connectButtonId) {
+               const buttonText = document.getElementById(buttonTextId);
+               const connectButton = document.getElementById(connectButtonId);
+               const dashboardButton = document.getElementById('dashboardButton');
+
+               if (!connectButton || !dashboardButton) {
+                 console.error('Connect button or dashboard button not found!');
+                 return;
+               }
+
+               if (typeof window.ethereum !== 'undefined') {
+                 try {
+                   const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+                   let connectedAccount;
+
+                   if (accounts.length === 0) {
+                     const requestedAccounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                     connectedAccount = requestedAccounts[0];
+                   } else {
+                     connectedAccount = accounts[0];
+                   }
+
+                   console.log('Connected account:', connectedAccount);
+                   localStorage.setItem('connectedAccount', connectedAccount);
+                   await updateButtonAndDashboardState(connectedAccount, buttonText, connectButton, dashboardButton);
+
+                 } catch (error) {
+                   console.error('Error connecting to MetaMask or fetching data:', error);
+                   buttonText.textContent = 'Access Limited';
+                   connectButton.style.backgroundColor = 'red';
+                   dashboardButton.style.display = 'none';
+                 }
+               } else {
+                 alert('MetaMask is not installed. Please install it from https://metamask.io/');
+                 buttonText.textContent = 'Access Limited';
+                 connectButton.style.backgroundColor = 'red';
+                 dashboardButton.style.display = 'none';
+               }
+             }
+
+             async function updateButtonAndDashboardState(connectedAccount, buttonText, connectButton, dashboardButton) {
+               buttonText.textContent = 'Checking NFTs...';
+               const hasNFT = await checkNftOwnership(connectedAccount);
+
+               if (hasNFT) {
+                 buttonText.textContent = 'Access Granted';
+                 connectButton.style.backgroundColor = 'green';
+                 dashboardButton.style.display = 'block';
+               } else {
+                 buttonText.textContent = 'Access Limited';
+                 connectButton.style.backgroundColor = 'red';
+                 dashboardButton.style.display = 'none';
+                 localStorage.removeItem('connectedAccount');
+               }
+             }
+
+             async function switchToPolygonNetwork() {
+               try {
+                 await window.ethereum.request({
+                   method: 'wallet_switchEthereumChain',
+                   params: [{ chainId: POLYGON_CHAIN_ID }],
+                 });
+               } catch (switchError) {
+                 if (switchError.code === 4902) {
+                   try {
+                     await window.ethereum.request({
+                       method: 'wallet_addEthereumChain',
+                       params: [
+                         {
+                           chainId: POLYGON_CHAIN_ID,
+                           chainName: 'Polygon Mainnet',
+                           rpcUrls: [POLYGON_RPC_URL],
+                           nativeCurrency: {
+                             name: 'MATIC',
+                             symbol: 'MATIC',
+                             decimals: 18,
+                           },
+                           blockExplorerUrls: ['https://polygonscan.com/'],
+                         },
+                       ],
+                     });
+                   } catch (addError) {
+                     console.error('Failed to add Polygon network to MetaMask:', addError);
+                     throw addError;
+                   }
+                 } else {
+                   console.error('Failed to switch to the Polygon network:', switchError);
+                   throw switchError;
+                 }
+               }
+             }
+
+             async function handleAccountChanged(accounts) {
+               const connectedAccount = accounts[0];
+               const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+               const buttonTextMobile = document.getElementById('buttonTextMobile');
+               const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+               const connectButtonMobile = document.getElementById('connectButtonMobile');
+
+               if (!connectButtonDesktop || !connectButtonMobile) {
+                 console.error('One or both of the connect buttons are missing from the DOM.');
+                 return;
+               }
+
+               if (connectedAccount) {
+                 const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+                 if (chainId !== POLYGON_CHAIN_ID) {
+                   await switchToPolygonNetwork();
+                 }
+
+                 const hasNFT = await checkNftOwnership(connectedAccount);
+                 updateConnectButton(hasNFT, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile);
+               }
+             }
+
+             function updateConnectButton(hasAccess, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile) {
+               if (hasAccess) {
+                 buttonTextDesktop.textContent = 'Access Granted';
+                 buttonTextMobile.textContent = 'Access Granted';
+                 connectButtonDesktop.style.backgroundColor = 'green';
+                 connectButtonMobile.style.backgroundColor = 'green';
+               } else {
+                 buttonTextDesktop.textContent = 'Access Limited';
+                 buttonTextMobile.textContent = 'Access Limited';
+                 connectButtonDesktop.style.backgroundColor = 'red';
+                 connectButtonMobile.style.backgroundColor = 'red';
+               }
+             }
+
+             async function disconnectWallet() {
+               const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+               const buttonTextMobile = document.getElementById('buttonTextMobile');
+               const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+               const connectButtonMobile = document.getElementById('connectButtonMobile');
+
+               buttonTextDesktop.textContent = 'Connect Wallet';
+               buttonTextMobile.textContent = 'Connect Wallet';
+               connectButtonDesktop.style.backgroundColor = '';
+               connectButtonMobile.style.backgroundColor = '';
+
+               document.getElementById('mysecretButton').style.display = 'none';
+               localStorage.removeItem('connectedAccount');
+             }
+
+             window.addEventListener('load', async function () {
+       const connectedAccount = localStorage.getItem('connectedAccount');
+       const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+       const buttonTextMobile = document.getElementById('buttonTextMobile');
+       const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+       const connectButtonMobile = document.getElementById('connectButtonMobile');
+       const dashboardButton = document.getElementById('dashboardButton'); // Ensure dashboard button is selected
+
+       if (connectedAccount) {
+         buttonTextDesktop.textContent = 'Checking NFTs...';
+         buttonTextMobile.textContent = 'Checking NFTs...';
+
+         // Perform NFT check and update dashboard button visibility
+         const hasNFT = await checkNftOwnership(connectedAccount);
+         if (hasNFT) {
+           dashboardButton.style.display = 'block'; // Show dashboard button if NFT is owned
+         } else {
+           dashboardButton.style.display = 'none'; // Hide if no NFT
+         }
+
+         await handleAccountChanged([connectedAccount]);
+       } else {
+         buttonTextDesktop.textContent = 'Connect Wallet';
+         buttonTextMobile.textContent = 'Connect Wallet';
+         dashboardButton.style.display = 'none'; // Hide dashboard if no account connected
+       }
+
+       if (window.ethereum) {
+         window.ethereum.on('accountsChanged', async (accounts) => {
+           await disconnectWallet();
+           await handleAccountChanged(accounts);
+         });
+         window.ethereum.on('chainChanged', async () => {
+           try {
+             await switchToPolygonNetwork();
+             const connectedAccount = localStorage.getItem('connectedAccount');
+             if (connectedAccount) {
+               const hasNFT = await checkNftOwnership(connectedAccount);
+               if (hasNFT) {
+                 dashboardButton.style.display = 'block'; // Ensure dashboard button shows after chain change
+               } else {
+                 dashboardButton.style.display = 'none';
+               }
+               await handleAccountChanged([connectedAccount]);
+             }
+           } catch (error) {
+             console.error('Error handling chain change:', error);
+           }
+         });
+       }
+     });
+
+
+             window.addEventListener('DOMContentLoaded', function () {
+               document.getElementById('connectButtonDesktop').addEventListener('click', function () {
+                 connectWallet('buttonTextDesktop', 'connectButtonDesktop');
+               });
+
+               document.getElementById('connectButtonMobile').addEventListener('click', function () {
+                 connectWallet('buttonTextMobile', 'connectButtonMobile');
+               });
+             });
+           </script>
+
+
+
+
+            <div class="gamfi_v2_hero_sect">
+                <div class="container" style="margin-top:60px;">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="gamfi_v2_hero_left">
+    <h2 class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.7s">
+        MULTICHAIN HUB WEB<span> 3.0</span> Ecosystem
+    </h2>
+    <p class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.8s">
+        The next generation WEB3 Hub for Community DAOs.
+    </p>
+
+    <!-- Flex container for buttons -->
+    <div class="buttons-container" style="display: inline-flex;">
+        <!-- Dashboard Button (Initially Hidden) -->
+        <div id="dashboardButton" class="gamfi_v2_hero_btns wow fadeInUp mysecretButton" style="display: none;" data-wow-delay="0.6s" data-wow-duration="0.9s">
+            <a href="dashboard.html" class="readon white-btn hover-shape view-project-btn">
+                <span class="btn-text">DASHBOARD</span>
+                <span class="hover-shape1"></span>
+                <span class="hover-shape2"></span>
+                <span class="hover-shape3"></span>
+            </a>
+        </div>
+
+        <!-- Apply Project Button -->
+        <div class="gamfi_v2_hero_btns wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.9s">
+            <a class="readon black-shape apply-project-btn" href="igo-apply.html">
+                <span class="btn-text">Apply Community</span>
+                <span class="hover-shape1"></span>
+                <span class="hover-shape2"></span>
+                <span class="hover-shape3"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="gamfi_v2_hero_right">
+                                <div class="gamfi_v2_hero_rocket">
+                                    <img src="assets/images/homeV2/rocket-front-color.png" alt="Rocket Img" class="Img-fluid RedRocketImg wow fadeInUp" />
+                                    <span class="rocketshadow1"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow2"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow3"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow4"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                    <span class="rocketshadow5"><img src="assets/images/homeV2/rocketStar.svg" alt="" class="img-fluid" /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<style>
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    padding: 0px 0px 0px;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 16%; /* Adjust based on the number of logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100px;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Adjust the width and gap for mobile devices */
+      @media (max-width: 600px) {
+          .slide {
+              width: calc(40% - 10px); /* Adjust based on the number of logos and desired gap */
+              margin: 0 5px; /* Adjust the gap between logos */
+          }
+      }
+
+</style>
+
+<!-- slickSlider js -->
+
+        <div class="market_cap_sect">
+          <div class="slider2">
+                <div class="slider-wrapper">
+                    <div class="slide"><img src="assets/images/slider/polygon.png" alt="Logo 2"></div>
+                    <div class="slide"><img src="assets/images/slider/cryptopia.png" alt="Logo 3"></div>
+                    <div class="slide"><img src="assets/images/slider/rafflecraft.png" alt="Logo 5"></div>
+                    <div class="slide"><img src="assets/images/slider/bybit.png" alt="Logo 4"></div>
+                    <div class="slide"><img src="assets/images/slider/hydra.png" alt="Logo 7"></div>
+                    <div class="slide"><img src="assets/images/slider/opensea.png" alt="Logo 8"></div>
+                    <div class="slide"><img src="assets/images/slider/helio.png" alt="Logo 9"></div>
+                    <div class="slide"><img src="assets/images/slider/erc721.png" alt="Logo 10"></div>
+                    <div class="slide"><img src="assets/images/slider/solidity.png" alt="Logo 11"></div>
+                    <div class="slide"><img src="assets/images/slider/mdx.png" alt="Logo 12"></div>
+                    <!-- Add more logos as needed -->
+                </div>
+            </div>
+            <span class="red-border-gradient"></span>
+            <span class="green-border-gradient"></span>
+        </div>
+
+        <!-- Project Section Start -->
+        <div id="dapps-section" class="gamfi-project-section project_pools_sect main-project-area pb-0">
+            <div class="container">
+                <div class="sec-inner align-items-center d-flex justify-content-between flex-wrap mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">EXPLORE</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">Decentralized Apps</h2>
+                    </div>
+
+                </div>
+                <div class="project_v2_tab_content_sect">
+
+                        <div class="row align-items-center">
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/AICopyTrading.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>AI Trading Bots</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/launchpad.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>LaunchPads</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/nodeme.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>Nodeme Smartpool</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+                        </div>
+
+
+
+                        <div class="row align-items-center">
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/nodepad.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>NodePad</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/bid.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>MetaBID</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+                          <div class="col-lg-4 col-md-6">
+                              <div class="project-shape-item hover-shape-border">
+                                  <div class="project-item"style="box-shadow: 1px 1px 18px 2px #64da476e;">
+                                      <div class="project-info text-center">
+                                          <a><img src="assets/images/dashicons/rafflecraft.png" alt="Explore-Image" style="height:auto; width:140px;" /></a>
+                                          <h4 class="mb-10 mt-5 text-center"><a>Rafflecraft</a></h4>
+                                      </div>
+
+                                      <span class="border-shadow shadow-1"></span>
+                                      <span class="border-shadow shadow-2"></span>
+                                      <span class="border-shadow shadow-3"></span>
+                                      <span class="border-shadow shadow-4"></span>
+                                  </div>
+
+                              </div>
+                              <span class="border-shadow shadow-1"></span>
+                              <span class="border-shadow shadow-2"></span>
+                              <span class="border-shadow shadow-3"></span>
+                              <span class="border-shadow shadow-4"></span>
+                          </div>
+
+
+
+                        </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Points Start -->
+        <div class="key_points_section main-project-area">
+            <div class="key_points_bg">
+                <div class="bg-stone">
+                    <span class="stone1"><img src="assets/images/icons/stone1.svg" alt="" class="img-fluid" /></span>
+                    <span class="stone2"><img src="assets/images/icons/stone2.svg" alt="" class="img-fluid" /></span>
+                    <span class="stone3"><img src="assets/images/icons/stone3.svg" alt="" class="img-fluid" /></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sec-inner align-items-center mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">FEATURES</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">Key Points</h2>
+                    </div>
+                    <div class="key_points_content">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="key_points_items wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                                    <div class="key_points_item_img">
+                                        <img src="assets/images/homeV2/key1.png" alt="icon" class="img-fluid" />
+                                    </div>
+                                    <div class="key_points_item_text">
+                                        <h3>Mutoco Ecosystem</h3>
+                                        <p>Mutoco Web3 hub is building on the Polygon Network for fully transparency on the blockchain.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="key_points_items wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                                    <div class="key_points_item_img">
+                                        <img src="assets/images/homeV2/key2.png" alt="icon" class="img-fluid" />
+                                    </div>
+                                    <div class="key_points_item_text">
+                                        <h3>Smart Contracts</h3>
+                                        <p>Mutuco is building Web3 DApps on the blockchain with smart contracts for a fully automated systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="key_points_items wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+                                    <div class="key_points_item_img">
+                                        <img src="assets/images/homeV2/key3.png" alt="icon" class="img-fluid" />
+                                    </div>
+                                    <div class="key_points_item_text">
+                                        <h3>Exclusively Access</h3>
+                                        <p>Mutoco is providing solutions exclusively for DAO communities with NFT-gated access.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="key_points_items wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.7s">
+                                    <div class="key_points_item_img">
+                                        <img src="assets/images/homeV2/key4.png" alt="icon" class="img-fluid" />
+                                    </div>
+                                    <div class="key_points_item_text">
+                                        <h3>Decentralized</h3>
+                                        <p>The main focus of the HUB is to provide an automated system and fully decentralized DApps for their partners to use.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Key Points Section End -->
+
+
+
+
+        <!-- Multi-Chain Support Section start -->
+        <div class="multi_chain_support_sect">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="multi_chain_support_left_sect wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                            <div class="multi_chain_support_img">
+                                <img src="assets/images/homeV2/Multi_Chain.png" alt="img" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="multi_chain_support_right_sect wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                            <div class="sec-inner align-items-center mb-30">
+                                <div class="sec-heading">
+                                    <div class="sub-inner mb-15">
+                                        <span class="sub-title">Launchpad</span>
+                                        <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                                    </div>
+                                    <h2 class="title mb-0">Multi-Chain Launchpad</h2>
+                                </div>
+                                <div class="multi_chain_support_right_content">
+                                    <p>Our launchpad, called SeedMe, is private and fully decentralized. We are offering to new startup projects the opportunity to gain support during their seed phases, while also providing our users the chance to participate in early-stage projects.</p>
+                                    <div class="multi_chain_support_right_list">
+                                        <ul>
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Polygon (POL)</li>
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Ethereum</li>
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Binance Smart Chain</li>
+                                        </ul>
+                                        <ul class="m-0">
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Solana</li>
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Arbitrum</li>
+                                            <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Avalanche</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Multi-Chain Support Section End -->
+
+        <!-- RoadMapV2 Section Start -->
+  <div class="roadmap_v2_section main-project-area">
+      <div class="container">
+          <div class="sec-inner align-items-center d-flex justify-content-between flex-wrap mb-30">
+              <div class="sec-heading">
+                  <div class="sub-inner mb-15">
+                      <span class="sub-title">Our Goals</span>
+                      <img class="heading-left-image" src="assets/images/fav.png" alt="Steps-Image" style="max-width:60px;" />
+                  </div>
+                  <h2 class="title">ROADMAPs</h2>
+              </div>
+              <div class="gamfi-btn-area roadmap-tab-btns">
+                  <ul>
+                      <li class="tablinks m-0">
+                          <button class="readon white-btn black-shape m-0" onclick="openTab(event, 'roadmap_v2_2024')">
+                              <span class="btn-text">2024</span>
+                              <span class="hover-shape1"></span>
+                              <span class="hover-shape2"></span>
+                              <span class="hover-shape3"></span>
+                          </button>
+                      </li>
+
+                      <li class="tablinks">
+                          <button class="readon white-btn black-shape m-0" onclick="openTab(event, 'roadmap_v2_2025')">
+                              <span class="btn-text">2025</span>
+                              <span class="hover-shape1"></span>
+                              <span class="hover-shape2"></span>
+                              <span class="hover-shape3"></span>
+                          </button>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="roadmap_v2_tab_content_sect">
+              <div class="roadmap_shape">
+                  <img src="assets/images/bg/roadMap_Line.svg" alt="" class="img-fluid" />
+              </div>
+
+              <!-- Roadmap 2024 Content -->
+              <div id="roadmap_v2_2024" class="tabcontent">
+                  <div class="roadmap_v2_tab_content roadmap_v2_tab_content_2021">
+                      <div class="roadmap_slick_slider_section">
+                          <div class="row m-0">
+                              <div class="col-md-4 col-m-6">
+                                  <div class="roadmap_contents">
+                                      <h3>Q4 2024</h3>
+                                      <div class="roadmap_list_sect">
+                                          <ul>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>WEB Platform Creation</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Smart Contracts Deployed</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>NFT Gated System</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Community Partnerships</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Roadmap 2025 Content -->
+              <div id="roadmap_v2_2025" class="tabcontent" style="display:none;">
+                  <div class="roadmap_v2_tab_content roadmap_v2_tab_content_2021">
+                      <div class="roadmap_slick_slider_section">
+                          <div class="row m-0">
+                              <div class="col-md-4 col-m-6">
+                                  <div class="roadmap_contents">
+                                      <h3>Q1 2025</h3>
+                                      <div class="roadmap_list_sect">
+                                          <ul>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>NodeMe Smartpool Live</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>NodePad BETA</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>RaffleCraft BETA</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Contract Audits</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Launchpad - Soft Launch</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-m-6">
+                                  <div class="roadmap_contents">
+                                      <h3>Q2 2025</h3>
+                                      <div class="roadmap_list_sect">
+                                          <ul>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>MetaBid BETA</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>RaffleCraft Release</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>MUTOCO PFP NFTs</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>New Community Partnership</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 col-m-6">
+                                  <div class="roadmap_contents">
+                                      <h3>Q3 2025</h3>
+                                      <div class="roadmap_list_sect">
+                                          <ul>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>NodePad Release</li>
+                                              <li><span><img src="assets/images/icons/icon-Check.svg" alt="img" class="img-fluid" /></span>Launchpad Release</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <span class="farme1"><img src="assets/images/bg/RoadMapV2Fram.png" alt="" class="img-fluid" /></span>
+      <span class="farme2"><img src="assets/images/bg/RoadMapV2Frame2.png" alt="" class="img-fluid" /></span>
+  </div>
+  <!-- RoadMapV2 Section End -->
+
+  <script>
+      // Function to open tabs
+      function openTab(evt, tabName) {
+          // Hide all elements with class="tabcontent"
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+
+          // Show the current tab
+          document.getElementById(tabName).style.display = "block";
+
+          // Remove the "active" class from all buttons
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].getElementsByTagName("button")[0].classList.remove("active");
+          }
+
+          // Add an "active" class to the button that opened the tab
+          evt.currentTarget.getElementsByTagName("button")[0].classList.add("active");
+      }
+
+      // Set 2024 tab as the default when the page loads
+      document.addEventListener("DOMContentLoaded", function () {
+          // Show 2024 tab by default
+          document.getElementById("roadmap_v2_2024").style.display = "block";
+
+          // Set 2024 button as active
+          document.querySelector(".roadmap-tab-btns li:first-child button").classList.add("active");
+      });
+  </script>
+
+
+
+
+
+        <!-- Our mentors Section Start -->
+        <div id="faqs-section" class="gamfi-team-section gamfi_FAQ_Sect gamfi_our_mentor_section pt-115 pb-85 md-pt-75 md-pb-42 mt-50">
+            <div class="container">
+                <div class="sec-heading text-center mb-55">
+                    <div class="sub-inner  mb-15">
+                        <img class="heading-left-image" src="assets/images/icons/steps2.png" alt="Steps-Image">
+                        <span class="ml-10 mr-10 sub-title">QUESTIONS & ANSWERS</span>
+                        <img class="heading-right-image" src="assets/images/icons/steps.png" alt="Steps-Image">
+                    </div>
+                    <h2 class="title">FREQUENTLY ASKED QUESTIONS</h2>
+                </div>
+                <div class="faq_content_sect">
+                    <div class="faq_questions">
+                        <h2 class="accordion no-border">
+                            What is Mutoco ?
+                            <span>
+                                <img src="assets/images/icons/plus.svg" alt="" class="img-fluid icon-plus" />
+                                <img src="assets/images/icons/munis.svg" alt="" class="Img-fluid icon-minus" />
+                            </span>
+                        </h2>
+                        <div class="accordion-panel">
+                            <p>Mutoco Web3 Hub is focused on developing fully transparent, decentralized applications (DApps) on the Polygon Network, leveraging blockchain technology and smart contracts to create automated systems. Their solutions cater exclusively to DAO communities, offering NFT-gated access for secure and exclusive use. The hub’s primary goal is to provide partners with efficient, automated systems and decentralized DApps that enhance transparency and functionality within the blockchain ecosystem.</p>
+                        </div>
+
+                        <h2 class="accordion">
+                            Why Mutoco is the best Choice for Communites ?
+                            <span>
+                                <img src="assets/images/icons/plus.svg" alt="" class="img-fluid icon-plus" />
+                                <img src="assets/images/icons/munis.svg" alt="" class="Img-fluid icon-minus" />
+                            </span></h2>
+                        <div class="accordion-panel">
+                            <p>Mutoco Web3 Hub’s primary focus is to provide its partner communities with automated systems and fully decentralized DApps, ensuring seamless and efficient operations within the blockchain ecosystem.</p>
+                        </div>
+
+                        <h2 class="accordion">
+                          What types of Communities can join in ?
+                            <span>
+                                <img src="assets/images/icons/plus.svg" alt="" class="img-fluid icon-plus" />
+                                <img src="assets/images/icons/munis.svg" alt="" class="Img-fluid icon-minus" />
+                            </span>
+                        </h2>
+                        <div class="accordion-panel">
+                            <p>Communities that can integrate with Mutoco include those operating within DAO (Decentralized Autonomous Organization) frameworks, NFT-based projects, and any group looking for secure, transparent, and automated solutions on the blockchain. These communities typically seek to enhance their operations with decentralized applications (DApps) and smart contract-driven automation, ensuring better governance, security, and efficiency.</p>
+                        </div>
+
+                        <h2 class="accordion">
+                          What types of DApps can Mutoco already provide to us ?
+                            <span>
+                                <img src="assets/images/icons/plus.svg" alt="" class="img-fluid icon-plus" />
+                                <img src="assets/images/icons/munis.svg" alt="" class="Img-fluid icon-minus" />
+                            </span>
+                        </h2>
+                        <div class="accordion-panel">
+                            <p>Mutoco is already developing DApps such as a Launchpad, NodePad, a Smartpool of Nodes based on tokenization (NFTs), Raffle Parties, and auctions for high-value NFTs, with more features on the way.</p>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Our mentors Section End -->
+
+        <!-- Footer Section Start -->
+        <div class="gamfi-footer-section">
+
+            <div class="footer-area">
+                <div class="container">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52 mb-mb-30">
+                            <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+                    <!-- Include Font Awesome in the head of your HTML -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+              <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                  <ul class="footer-icon-list">
+                      <li><a href="https://x.com/MutocoTech"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://discord.gg/ehCmQCDNrC"><i class="fab fa-discord"></i></a></li>
+                      <li><a href="https://medium.com/@mutocoweb3"><i class="fab fa-medium"></i></a></li>
+                      <li><a href="https://github.com/MutocoWeb3Hub"><i class="fab fa-github"></i></a></li>
+                  </ul>
+              </div>
+
+
+                    <div class="footer-logo text-center mb-45">
+                        <img src="assets/images/logo.png" alt="Footer-logo" />
+                    </div>
+
+                    <div class="copyright-area text-center mb-0">
+                        <div class="dsc mb-37 md-mb-25">Copyright © 2024. All Rights Reserved by
+                            <a target="_blank" class="gafi" href="#">MUTOCO</a>
+                        </div>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#gamfi-header"><i class="icon-arrow_up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+
+        </div>
+
+
+
+        <div class="gamfi_footer_btn_sect">
+            <div class="gamfi_footer_btn_content">
+                <span class="frame_left"><img src="assets/images/homeV2/bottomShape-left.png" alt="img" class="img-fluid" /></span>
+                <span class="frame_right"><img src="assets/images/homeV2/bottomShape-right.png" alt="img" class="img-fluid" /></span>
+                <div class="rocket">
+                    <img src="assets/images/fav.png" alt="img" class="img-fluid" style="height:125px;" />
+                </div>
+                <a href="igo-apply.html">APPLY FOR Community</a>
+            </div>
+        </div>
+
+
+        <!-- Meta Mask Connect -->
+        <script src="assets/js/web3.min.js"></script>
+        <script src="assets/js/metamask.js"></script>
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- jquery counterup js -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <!-- Time Counter js -->
+        <script src="assets/js/time-counter.js"></script>
+        <!-- slickSlider js -->
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/metamaskhandler.js"></script>
+
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+         <!-- home2 js -->
+         <script src="assets/js/custom/home2.js"></script>
+    </body>
+</html>

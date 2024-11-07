@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tag -->
+      <meta charset="utf-8" />
+      <title>MUTOCO - SHOP</title>
+      <meta name="description" content="Welcome to MUTOCO SHOP, your go-to place for all your web3 needs." />
+
+      <!-- SEO Meta Tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <meta name="description" content="Buy the latest in Web3 technology and products at MUTOCO." />
+
+
+      <!-- Twitter Card Meta Tags -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="MUTOCO - SHOP" />
+      <meta name="twitter:description" content="Explore MUTOCO for the latest in Web3 products and technology." />
+      <meta name="twitter:image" content="assets/images/mutocopreview.png" /> <!-- Replace with your image URL -->
+      <meta name="twitter:site" content="@MutocoTech" /> <!-- Replace with your Twitter handle if applicable -->
+
+      <!-- Favicon and Other Resources -->
+      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+
+      <!-- Bootstrap v4.4.1 css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+      <!-- animate css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+      <!-- magnific css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+      <!-- owl.carousel css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+      <!-- off canvas css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+      <!-- flaticon css  -->
+      <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+      <!-- font awesome icon css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+      <!-- spacing css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.1/dist/web3.min.js"></script>
+<style>
+.gamfi-breadcrumbs-section {
+    background: url(assets/images/bg/breadcrumbs-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin-top: 110px;
+}
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.info-card p {
+    margin: 10px 0;
+}
+
+.btn-glass {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #000000;
+}
+
+.collection-image, .app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.collection-image2, .app-image2 {
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* Basic Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 20px;
+}
+
+/* Ensure the images are responsive */
+.grid img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Make the grid responsive */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+#notification {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.notification-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.notification-error {
+    color: #ffffff;
+    background-color: #ef0000;
+    border-color: #fafdfd;
+    border: 2px solid;
+}
+</style>
+
+    </head>
+	<body>
+
+        <!--Preloader area start here-->
+        <div class="loader_first">
+            <div class="circular-spinner"></div>
+        </div>
+        <!--Preloader area End here-->
+
+        <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section transparent-header">
+          <div class="menu-area menu-sticky">
+            <div class="container">
+              <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                  <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                  </div>
+                  <div class="header-menu">
+                    <ul class="nav-menu">
+
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="gamfi-btn-area">
+                  <ul>
+                    <li>
+                      <a id="nav-expander" class="nav-expander bar" href="#">
+                        <div class="bar">
+                          <span class="dot1"></span>
+                          <span class="dot2"></span>
+                          <span class="dot3"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="buy-token">
+                      <a class="readon black-shape" href="index.html">
+                        <span class="btn-text">HOME </span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                      </a>
+                    </li>
+                    <!-- Desktop Connect Button -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Mobile Menu start -->
+          <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+            <div class="close-btn">
+              <a id="nav-close2" class="nav-close">
+                <div class="line">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                </div>
+              </a>
+            </div>
+            <div class="sidebar-logo mb-20">
+              <a href="index.html"><img src="assets/images/fav.png" alt=""></a>
+            </div>
+            <ul class="nav-menu">
+              <li class="current-menu-item"><a href="index.html">Home</a></li>
+              <!-- Mobile Connect Button -->
+              <li class="connect-btn-wrapper">
+                <button type="button" class="connect-btn readon hover-shape">
+                  <span class="btn-text">Connect Wallet</span>
+                  <span class="hover-shape1"></span>
+                  <span class="hover-shape2"></span>
+                  <span class="hover-shape3"></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+         <!--Header End-->
+
+		<!-- Breadcrumbs Section Start -->
+		<div class="gamfi-breadcrumbs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="breadcrumbs-area sec-heading">
+							<div class="sub-inner mb-15 mt-35">
+							</div>
+							<h2 class="title mb-0">MINT THE NFTs</h2>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Breadcrumbs  Section End -->
+
+		<!-- Tied Start -->
+		<div class="gamfi_tier_sect">
+		    <div class="container">
+		        <div class="row">
+              <div class="grid" style="margin-bottom: 20px;text-align:center;">
+                <section>
+    <h2>NFT Pro</h2>
+    <a class="pro-details"> Minted</a>
+
+    <script>
+      const nftProContractAddress = "0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166"; // Contract Address
+      const abi = [
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ];
+
+      async function fetchNFTData() {
+        const alchemyApiKey = "g10lfDHLbPm2pHo0vI4MXPRSjWoev0-M"; // Replace with your Alchemy API key
+
+        if (!alchemyApiKey) {
+          console.error("Alchemy API key is missing. Please provide your Alchemy API key.");
+          document.querySelector(".pro-details").innerText = "Error: Missing API Key";
+          return;
+        }
+
+        try {
+          const provider = new Web3.providers.HttpProvider(`https://polygon-mainnet.g.alchemy.com/v2/${alchemyApiKey}`);
+          const web3 = new Web3(provider);
+          const contract = new web3.eth.Contract(abi, nftProContractAddress);
+
+          const totalSupply = await contract.methods.totalSupply().call();
+          document.querySelector(".pro-details").innerText = `${totalSupply}/1000 Minted`; // Update the pro-details <a> tag
+        } catch (error) {
+          console.error("Error fetching NFT data:", error);
+          document.querySelector(".pro-details").innerText = `Error: ${error.message}`;
+        }
+      }
+
+      fetchNFTData();
+    </script>
+
+    <img src="assets/images/PRO_NFT.png" alt="Pro Image">
+    <h4 style="margin:0px;">$400 USDT</h3>
+    <a id="mintButton2" class="readon black-shape mt-4" href="javascript:void(0);">
+        <span class="btn-text">MINT NOW </span>
+        <span class="hover-shape1"></span>
+        <span class="hover-shape2"></span>
+        <span class="hover-shape3"></span>
+    </a>
+    <!-- Notification area -->
+    <div id="notification" style="margin-top: 10px; display: none;"></div>
+    <script>
+    const web3 = new Web3(window.ethereum);
+
+    // Define account and connection status
+    let account = null;
+    let isConnected = false;
+
+    // USDT Contract ABI (Your USDT ABI here)
+    const usdtContractABI = [
+  {
+    "constant": true,
+    "inputs": [{ "name": "_owner", "type": "address" }],
+    "name": "balanceOf",
+    "outputs": [{ "name": "balance", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "_to", "type": "address" },
+      { "name": "_value", "type": "uint256" }
+    ],
+    "name": "transfer",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      { "name": "_spender", "type": "address" },
+      { "name": "_value", "type": "uint256" }
+    ],
+    "name": "approve",
+    "outputs": [{ "name": "", "type": "bool" }],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+];
+
+    // ProKeyMD Contract ABI (Your minting contract ABI here)
+    const proKeyMDContractABI = [
+  {
+    "constant": false,
+    "inputs": [{ "name": "_mintAmount", "type": "uint256" }],
+    "name": "mint",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "cost",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+  // Add other relevant ABI parts if needed
+];
+
+    // Contract addresses
+    const usdtContractAddress = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'; // USDT contract on Polygon
+    const proKeyMDContractAddress = '0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166'; // ProKeyMD Mint contract address
+
+    const usdtContract = new web3.eth.Contract(usdtContractABI, usdtContractAddress);
+    const proKeyMDContract = new web3.eth.Contract(proKeyMDContractABI, proKeyMDContractAddress);
+
+    // Function to display notifications
+    function showNotification(message, type) {
+        const notification = document.getElementById('notification');
+        notification.style.display = 'block';
+        notification.innerHTML = message;
+
+        // Remove previous notification classes
+        notification.classList.remove('notification-success', 'notification-error');
+
+        // Add appropriate class based on the type of notification
+        if (type === 'success') {
+            notification.classList.add('notification-success');
+        } else if (type === 'error') {
+            notification.classList.add('notification-error');
+        }
+
+        // Optionally hide notification after a few seconds
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 5000); // Hide after 5 seconds
+    }
+
+    // Function to connect to MetaMask wallet and update connection status
+    async function connectWallet() {
+        if (window.ethereum) {
+            try {
+                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                account = accounts[0];
+                isConnected = true;
+                console.log('Wallet connected:', account);
+                await switchToPolygon();
+                return account;
+            } catch (error) {
+                console.error('Error connecting wallet:', error);
+                showNotification('Error connecting wallet. Please try again.', 'error');
+            }
+        } else {
+            showNotification('MetaMask not detected. Please install MetaMask.', 'error');
+        }
+    }
+
+    // Function to switch to Polygon network
+    async function switchToPolygon() {
+        try {
+            await window.ethereum.request({
+                method: 'wallet_switchEthereumChain',
+                params: [{ chainId: '0x89' }], // Polygon Mainnet chain ID
+            });
+            console.log('Switched to the Polygon network');
+        } catch (error) {
+            console.error('Failed to switch to the Polygon network', error);
+            showNotification('Failed to switch to the Polygon network.', 'error');
+        }
+    }
+
+    // Function to check USDT balance
+    async function getUsdtBalance(account) {
+        try {
+            const balanceWei = await usdtContract.methods.balanceOf(account).call();
+            const balance = web3.utils.fromWei(balanceWei, 'mwei'); // Convert from Wei (USDT usually uses 6 decimals)
+            console.log(`USDT Balance: ${balance}`);
+            return balance;
+        } catch (error) {
+            console.error('Error getting USDT balance:', error);
+            showNotification('Error fetching USDT balance.', 'error');
+            return null;
+        }
+    }
+
+    // Approve USDT with an aggressive gas setting
+    const approveUSDT = async (amountInWei) => {
+        console.info('amountInWei = ', amountInWei);
+
+        try {
+            const gasPrice = await web3.eth.getGasPrice();
+            const aggressiveGasPrice = web3.utils.toBN(gasPrice).mul(web3.utils.toBN(150)).div(web3.utils.toBN(100)); // Increase gas price by 30%
+
+            await usdtContract.methods.approve(proKeyMDContractAddress, amountInWei).send({
+                from: account,
+                gasPrice: aggressiveGasPrice.toString(),
+            });
+
+            showNotification('USDT approved successfully!', 'success');
+            return true;
+        } catch (error) {
+            console.error('Approval error:', error);
+            showNotification('Approval failed. Please try again.', 'error');
+            return false;
+        }
+    };
+
+    // Approve and mint tokens
+    const approveAndMint = async (mintAmount) => {
+        if (!isConnected) {
+            showNotification('Please connect your wallet first.', 'error');
+            return;
+        }
+
+        const networkId = await web3.eth.net.getId();
+        if (networkId !== 137) { // 137 is the network ID for Polygon Mainnet
+            showNotification('Please switch to the Polygon Mainnet.', 'error');
+            return;
+        }
+
+        // Fetch the minting cost
+        const costPerNFTWei = await proKeyMDContract.methods.cost().call(); // Get cost of minting from the contract
+        const totalCostWei = costPerNFTWei * mintAmount;
+        const totalCost = totalCostWei / Math.pow(10, 6); // Adjusting for USDT's 6 decimal places
+
+        const isApproved = await approveUSDT(totalCostWei); // Approve the total cost in USDT's smallest unit
+        if (!isApproved) return;
+
+        const balanceInUSDT = await getUsdtBalance(account); // This should be a string representing the balance in USDT
+        console.info('USDT balance = ', balanceInUSDT);
+        console.info('Total Cost = ', totalCost);
+        if (parseFloat(balanceInUSDT) < totalCost) {
+            showNotification('Insufficient USDT', 'error');
+            return;
+        }
+
+        try {
+            const gasPrice = await web3.eth.getGasPrice();
+            const aggressiveGasPrice = web3.utils.toBN(gasPrice).mul(web3.utils.toBN(150)).div(web3.utils.toBN(100)); // Increase gas price by 30%
+
+            await proKeyMDContract.methods.mint(mintAmount).send({
+                from: account,
+                gasPrice: aggressiveGasPrice.toString(),
+            });
+            showNotification('Purchase successful!', 'success');
+        } catch (error) {
+            console.error('Minting error:', error);
+            showNotification('Purchase failed! Please try again.', 'error');
+        }
+    };
+
+    // Handle mint button click
+    async function handleMintClick() {
+        account = await connectWallet();  // Connect wallet and update connection status
+        if (account) {
+            const mintAmount = 1; // Set the number of tokens to mint (could be dynamic)
+            await approveAndMint(mintAmount);  // Approve and mint
+        }
+    }
+
+    // Attach click event to the mint button
+    document.getElementById('mintButton2').addEventListener('click', async function () {
+        await handleMintClick();
+    });
+
+    // Handle account change in MetaMask
+    window.ethereum.on('accountsChanged', function (accounts) {
+        account = accounts[0];
+        isConnected = !!account;  // Update connection status based on account presence
+        console.log('Account changed to:', accounts[0]);
+    });
+    </script>
+
+  </section>
+
+
+  <section id="nft-holders-collection2">
+    <h2>NFT Royal</h2>
+    <a class="royal-details"><span> Minted</span></a>
+
+    <script>
+      const nftRoyalContractAddress = "0x0Ff1E228E6A95aA69C76bDcb366E3e6fE1a614D3"; // Contract Address
+      const abiRoyal = [
+        {
+          "constant": true,
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "payable": false,
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ];
+
+      async function fetchNFTData() {
+        const alchemyApiKey = "g10lfDHLbPm2pHo0vI4MXPRSjWoev0-M"; // Replace with your Alchemy API key
+
+        if (!alchemyApiKey) {
+          console.error("Alchemy API key is missing. Please provide your Alchemy API key.");
+          document.querySelector(".royal-details span").innerText = "Error: Missing API Key";
+          return;
+        }
+
+        try {
+          const provider = new Web3.providers.HttpProvider(`https://polygon-mainnet.g.alchemy.com/v2/${alchemyApiKey}`);
+          const web3 = new Web3(provider);
+          const contract = new web3.eth.Contract(abiRoyal, nftRoyalContractAddress);
+
+          const totalSupply = await contract.methods.totalSupply().call();
+          document.querySelector(".royal-details span").innerText = `${totalSupply}/100 Minted`; // Update the royal-details <a> tag
+        } catch (error) {
+          console.error("Error fetching NFT data:", error);
+          document.querySelector(".royal-details span").innerText = `Error: ${error.message}`;
+        }
+      }
+
+      fetchNFTData();
+    </script>
+
+    <img src="assets/images/Royal_NFT.png" alt="Royal Image">
+    <h4 style="margin:0px;">$1500 USDT</h3>
+
+    <a id="mintButton1" class="readon black-shape mt-4" href="javascript:void(0);">
+        <span class="btn-text">MINT NOW </span>
+        <span class="hover-shape1"></span>
+        <span class="hover-shape2"></span>
+        <span class="hover-shape3"></span>
+    </a>
+    <!-- Notification area -->
+    <div id="notificationr" style="margin-top: 10px; display: none;"></div>
+
+    <script>
+  (function() {
+      const web3 = new Web3(window.ethereum); // Use MetaMask provider
+
+      // Define account and connection status
+      let account = null;
+      let isConnected = false;
+
+      // USDT Contract ABI and RoyalKeyMD Contract ABI
+      const usdtContractABI = [
+          {
+              "constant": true,
+              "inputs": [{ "name": "_owner", "type": "address" }],
+              "name": "balanceOf",
+              "outputs": [{ "name": "balance", "type": "uint256" }],
+              "payable": false,
+              "stateMutability": "view",
+              "type": "function"
+          },
+          {
+              "constant": false,
+              "inputs": [
+                  { "name": "_to", "type": "address" },
+                  { "name": "_value", "type": "uint256" }
+              ],
+              "name": "transfer",
+              "outputs": [{ "name": "", "type": "bool" }],
+              "payable": false,
+              "stateMutability": "nonpayable",
+              "type": "function"
+          },
+          {
+              "constant": false,
+              "inputs": [
+                  { "name": "_spender", "type": "address" },
+                  { "name": "_value", "type": "uint256" }
+              ],
+              "name": "approve",
+              "outputs": [{ "name": "", "type": "bool" }],
+              "payable": false,
+              "stateMutability": "nonpayable",
+              "type": "function"
+          }
+      ];
+
+      const royalKeyMDABI = [
+          {
+              "constant": false,
+              "inputs": [{ "name": "_mintAmount", "type": "uint256" }],
+              "name": "mint",
+              "outputs": [],
+              "payable": false,
+              "stateMutability": "nonpayable",
+              "type": "function"
+          },
+          {
+              "constant": true,
+              "inputs": [],
+              "name": "cost",
+              "outputs": [{ "name": "", "type": "uint256" }],
+              "payable": false,
+              "stateMutability": "view",
+              "type": "function"
+          }
+      ];
+
+      // Contract addresses
+      const usdtContractAddress = '0xc2132D05D31c914a87C6611C10748AEb04B58e8F'; // USDT contract on Polygon
+      const royalKeyMDAddress = '0x0Ff1E228E6A95aA69C76bDcb366E3e6fE1a614D3'; // Replace with your actual RoyalKeyMD contract address
+
+      const usdtContract = new web3.eth.Contract(usdtContractABI, usdtContractAddress);
+      const royalKeyMDContract = new web3.eth.Contract(royalKeyMDABI, royalKeyMDAddress);
+
+      // Function to display notifications
+      function showNotification(message, type) {
+          const notificationr = document.getElementById('notificationr');
+          notificationr.style.display = 'block';
+          notificationr.innerHTML = message;
+
+          // Remove previous notification classes
+          notificationr.classList.remove('notification-success', 'notification-error');
+
+          // Add appropriate class based on the type of notification
+          if (type === 'success') {
+              notificationr.classList.add('notification-success');
+          } else if (type === 'error') {
+              notificationr.classList.add('notification-error');
+          }
+
+          // Optionally hide notification after a few seconds
+          setTimeout(() => {
+              notificationr.style.display = 'none';
+          }, 5000); // Hide after 5 seconds
+      }
+
+      // Function to connect to MetaMask wallet and update connection status
+      async function connectWallet() {
+          if (window.ethereum) {
+              try {
+                  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                  account = accounts[0];
+                  isConnected = true;
+                  console.log('Wallet connected:', account);
+                  await switchToPolygon();
+                  return account;
+              } catch (error) {
+                  console.error('Error connecting wallet:', error);
+                  showNotification('Error connecting wallet. Please try again.', 'error');
+              }
+          } else {
+              showNotification('MetaMask not detected. Please install MetaMask.', 'error');
+          }
+      }
+
+      // Function to switch to Polygon network
+      async function switchToPolygon() {
+          try {
+              await window.ethereum.request({
+                  method: 'wallet_switchEthereumChain',
+                  params: [{ chainId: '0x89' }], // Polygon Mainnet chain ID
+              });
+              console.log('Switched to the Polygon network');
+          } catch (error) {
+              console.error('Failed to switch to the Polygon network', error);
+              showNotification('Failed to switch to the Polygon network.', 'error');
+          }
+      }
+
+      // Function to approve USDT
+      async function approveUSDT(amountInWei) {
+          try {
+              const gasPrice = await web3.eth.getGasPrice();
+              const aggressiveGasPrice = web3.utils.toBN(gasPrice).mul(web3.utils.toBN(150)).div(web3.utils.toBN(100)); // Increase gas price by 50%
+
+              await usdtContract.methods.approve(royalKeyMDAddress, amountInWei).send({
+                  from: account,
+                  gasPrice: aggressiveGasPrice.toString(),
+              });
+              console.log('USDT approved for transfer');
+              showNotification('USDT approved successfully!', 'success');
+              return true;
+          } catch (error) {
+              console.error('Approval failed:', error);
+              showNotification('Approval failed. Please try again.', 'error');
+              return false;
+          }
+      }
+
+      // Function to check USDT balance
+      async function getUsdtBalance() {
+          try {
+              const balanceWei = await usdtContract.methods.balanceOf(account).call();
+              const balance = web3.utils.fromWei(balanceWei, 'mwei'); // Convert from Wei (USDT usually uses 6 decimals)
+              console.log(`USDT Balance: ${balance}`);
+              return balance;
+          } catch (error) {
+              console.error('Error getting USDT balance:', error);
+              showNotification('Error fetching USDT balance.', 'error');
+              return null;
+          }
+      }
+
+      // Mint tokens using the mint function (not just transferring USDT)
+      async function mintTokens(mintAmount) {
+          try {
+              const gasPrice = await web3.eth.getGasPrice();
+              const aggressiveGasPrice = web3.utils.toBN(gasPrice).mul(web3.utils.toBN(150)).div(web3.utils.toBN(100)); // Increase gas price by 50%
+
+              await royalKeyMDContract.methods.mint(mintAmount).send({
+                  from: account,
+                  gasPrice: aggressiveGasPrice.toString(),
+              });
+              console.log('Minting successful');
+              showNotification('Minting successful!', 'success');
+          } catch (error) {
+              console.error('Minting failed:', error);
+              showNotification('Minting failed! Please try again.', 'error');
+          }
+      }
+
+      // Approve and mint tokens
+      async function approveAndMint(mintAmount) {
+          if (!isConnected) {
+              showNotification('Please connect your wallet first.', 'error');
+              return;
+          }
+
+          const networkId = await web3.eth.net.getId();
+          if (networkId !== 137) { // 137 is the network ID for Polygon Mainnet
+              showNotification('Please switch to the Polygon Mainnet.', 'error');
+              return;
+          }
+
+          // Fetch the minting cost
+          const costPerNFTWei = await royalKeyMDContract.methods.cost().call(); // Get cost of minting from the contract
+          const totalCostWei = costPerNFTWei * mintAmount;
+
+          // Approve USDT first
+          const isApproved = await approveUSDT(totalCostWei); // Approve the total cost in USDT's smallest unit
+          if (!isApproved) return;
+
+          // Check if the user has sufficient USDT balance
+          const balanceInUSDT = await getUsdtBalance(); // This should be a string representing the balance in USDT
+          const totalCostInUSDT = web3.utils.fromWei(totalCostWei.toString(), 'mwei'); // Convert total cost to USDT units
+
+          if (parseFloat(balanceInUSDT) < parseFloat(totalCostInUSDT)) {
+              showNotification('Insufficient USDT balance.', 'error');
+              return;
+          }
+
+          // Mint tokens after approval
+          await mintTokens(mintAmount);
+      }
+
+      // Handle mint button click
+      async function handleMintClick() {
+          account = await connectWallet();  // Connect wallet and update connection status
+          if (account) {
+              const mintAmount = 1; // Set the number of tokens to mint (can be dynamic)
+              await approveAndMint(mintAmount);  // Approve and mint
+          }
+      }
+
+      // Attach click event to the mint button
+      document.getElementById('mintButton1').addEventListener('click', async function () {
+          await handleMintClick();
+      });
+
+      // Handle account change in MetaMask
+      window.ethereum.on('accountsChanged', function (accounts) {
+          account = accounts[0];
+          isConnected = !!account;  // Update connection status based on account presence
+          console.log('Account changed to:', accounts[0]);
+      });
+  })();
+  </script>
+
+
+  </section>
+
+
+<section id="nft-holders-collection3">
+  <h2>NFT NodeMe</h2>
+  <a class="nodeme-details">Minted</a>
+
+  <script>
+    const nftNodeMeContractAddress = "0x870467a76281b5db1e0d861c3d113f3829861104"; // Contract Address
+    const abiNodeMe = [
+      {
+        "constant": true,
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "name": "",
+            "type": "uint256"
+          }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ];
+
+    async function fetchNFTData() {
+      const alchemyApiKey = "g10lfDHLbPm2pHo0vI4MXPRSjWoev0-M"; // Replace with your Alchemy API key
+
+      if (!alchemyApiKey) {
+        console.error("Alchemy API key is missing. Please provide your Alchemy API key.");
+        document.querySelector(".nodeme-details").innerText = "Error: Missing API Key";
+        return;
+      }
+
+      try {
+        const provider = new Web3.providers.HttpProvider(`https://polygon-mainnet.g.alchemy.com/v2/${alchemyApiKey}`);
+        const web3 = new Web3(provider);
+        const contract = new web3.eth.Contract(abiNodeMe, nftNodeMeContractAddress);
+
+        // Call the totalSupply method from the contract
+        const totalSupply = await contract.methods.totalSupply().call();
+        console.log("Total supply of NFTs:", totalSupply); // Debugging line to verify the totalSupply value
+
+        // Check if totalSupply is a valid number
+        if (totalSupply) {
+          document.querySelector(".nodeme-details").innerText = `${totalSupply}/230 Minted`; // Update directly in the <a> tag
+        } else {
+          document.querySelector(".nodeme-details").innerText = `Error fetching total supply`;
+        }
+
+      } catch (error) {
+        console.error("Error fetching NFT data:", error);
+        document.querySelector(".nodeme-details").innerText = `Error: ${error.message}`;
+      }
+    }
+
+    fetchNFTData();
+  </script>
+
+  <img src="assets/images/NodeMe_NFT.png" alt="Nodeme Image">
+  <h4 style="margin:0px;">$500 USDT</h3>
+  <a class="readon black-shape mt-4" href="#">
+    <span class="btn-text">SOLD OUT </span>
+    <span class="hover-shape1"></span>
+    <span class="hover-shape2"></span>
+    <span class="hover-shape3"></span>
+  </a>
+</section>
+
+
+
+
+              </div>
+
+		            </div>
+
+
+
+
+		        </div>
+		    </div>
+
+
+
+		</div>
+		<!-- Tied End -->
+
+		 <!-- Footer Section Start -->
+         <div class="gamfi-footer-section">
+            <div class="container">
+
+            </div>
+            <div class="footer-area">
+                <div class="container">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52">
+                            <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+                                <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                                    <ul class="footer-icon-list">
+                                        <li><a href="https://x.com/MutocoTech"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://discord.gg/ehCmQCDNrC"><i class="fab fa-discord"></i></a></li>
+                                        <li><a href="https://medium.com/@mutocoweb3"><i class="fab fa-medium"></i></a></li>
+                                        <li><a href="https://github.com/MutocoWeb3Hub"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+
+                    <div class="footer-logo text-center mb-45">
+                       <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Footer-logo" />
+                       </a>
+                    </div>
+
+                    <div class="copyright-area text-center mb-0">
+                        <p class="dsc mb-37">
+                            Copyright © 2024. All Rights Reserved by
+                            <a target="_blank" class="gafi" href="#">MUTOCO</a>
+                        </p>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#">
+                            <i class="icon-arrow_up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+
+
+
+
+		<!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/metamaskhandler.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+
+	</body>
+</html>

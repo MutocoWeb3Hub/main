@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- meta tag -->
+       <meta charset="utf-8" />
+       <title>MUTOCO - Copy Trade</title>
+       <meta name="description" content="Welcome to MUTOCO Copy Trade" />
+       <!-- responsive tag -->
+       <meta http-equiv="x-ua-compatible" content="ie=edge" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Open Graph Meta Tags (for Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="MUTOCO - Copy Trade" />
+<meta property="og:description" content="Explore MUTOCO for the latest in Web3 products and technology." />
+<meta property="og:image" content="https://mutoco.tech/assets/images/mutocopreview.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" /> <!-- Use a larger image for better quality on social media -->
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="MUTOCO" />
+<meta property="og:url" content="https://mutoco.tech/trading.html" /> <!-- The exact URL of the page you're sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MUTOCO" />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MUTOCO - Copy Trade" />
+<meta name="twitter:description" content="Explore MUTOCO for the latest in Web3 products and technology." />
+<meta name="twitter:image" content="https://mutoco.tech/assets/images/mutocopreview.png" />
+<meta name="twitter:image:alt" content="MUTOCO" />
+<meta name="twitter:site" content="@YourTwitterHandle" /> <!-- Add your Twitter handle if you have one -->
+
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+        <!-- font awesome icon css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+
+        <style>
+
+        .gamfi-breadcrumbs-section {
+            background: url(assets/images/bg/breadcrumbs-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 40px;
+            margin-top: 110px;
+        }
+        .nav-link {
+            color: #488d4b;
+        }
+        .nav {
+    --bs-nav-link-hover-color: #4CAF50;
+}
+/* Media queries for responsiveness */
+@media (max-width: 991.98px) {
+#account-required .d-flex {
+  flex-direction: column; /* Stack items vertically */
+}
+
+#account-required .mx-5 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 15px; /* Add some space at the bottom */
+}
+
+#account-required i.fa-ban {
+  font-size: 80px; /* Slightly reduce icon size for tablets */
+}
+}
+
+@media (max-width: 575.98px) {
+#account-required .p-4 {
+  padding: 20px; /* Adjust padding for smaller screens */
+  text-align: center;
+}
+
+#account-required i.fa-ban {
+  font-size: 60px; /* Further reduce icon size for mobiles */
+}
+
+#account-required .text-danger {
+  font-size: 24px; /* Adjust title size */
+}
+
+#account-required .lead {
+  font-size: 16px; /* Adjust paragraph size */
+}
+}
+html, body {
+    background-image: url(https://mutoco.tech/assets/images/bg/project-bg.jpg);
+}
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line span {
+    background: #ffffff;
+}
+        </style>
+
+    </head>
+	<body>
+
+        <!--Preloader area start here-->
+        <div class="loader_first">
+            <div class="circular-spinner"></div>
+        </div>
+        <!--Preloader area End here-->
+
+        <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section transparent-header">
+          <div class="menu-area menu-sticky">
+            <div class="container">
+              <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                  <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+                  </div>
+                  <div class="header-menu">
+
+                  </div>
+                </div>
+                <div class="gamfi-btn-area">
+                  <ul>
+                    <li>
+                      <a id="nav-expander" class="nav-expander bar" href="#">
+                        <div class="bar">
+                          <span class="dot1"></span>
+                          <span class="dot2"></span>
+                          <span class="dot3"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="buy-token">
+                      <a class="readon black-shape" href="dashboard.html">
+                        <span class="btn-text">DASHBOARD</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                      </a>
+
+                    </li>
+                    <!-- Desktop Connect Button -->
+                    <li class="connect-btn-wrapper">
+                      <button id="connectButtonDesktop" class="connect-btn readon white-btn hover-shape">
+                        <img src="assets/images/icons/connect.png" alt="Icon">
+                        <span id="buttonTextDesktop" class="btn-text">Connect Wallet</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Mobile Menu start -->
+          <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+            <div class="close-btn">
+              <a id="nav-close2" class="nav-close">
+                <div class="line">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                </div>
+              </a>
+            </div>
+            <div class="sidebar-logo mb-20">
+              <a href="index.html"><img src="assets/images/fav.png" alt=""></a>
+            </div>
+            <ul class="nav-menu">
+              <li class="current-menu-item" style="color:white;"><a href="index.html">Home</a></li>
+              <!-- Mobile Connect Button -->
+              <li class="connect-btn-wrapper">
+                <button type="button" id="connectButtonMobile" class="connect-btn readon hover-shape">
+                  <img src="assets/images/icons/connect.png" alt="Icon">
+                  <span id="buttonTextMobile" class="btn-text">Connect Wallet</span>
+                  <span class="hover-shape1"></span>
+                  <span class="hover-shape2"></span>
+                  <span class="hover-shape3"></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+         <!--Header End-->
+         <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+         <script>
+            const POLYGON_CHAIN_ID = '0x89'; // Polygon mainnet chain ID
+            const POLYGON_RPC_URL = 'https://polygon-rpc.com'; // Updated RPC URL
+
+            async function checkNftOwnership(account) {
+              const contractAddresses = [
+                "0x0ff1e228e6a95aa69c76bdcb366e3e6fe1a614d3",
+                "0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166"
+              ];
+
+              const ABI = [
+                {
+                  "constant": true,
+                  "inputs": [{ "name": "_owner", "type": "address" }],
+                  "name": "balanceOf",
+                  "outputs": [{ "name": "", "type": "uint256" }],
+                  "type": "function"
+                }
+              ];
+
+              let web3 = new Web3(new Web3.providers.HttpProvider(POLYGON_RPC_URL));
+              console.log('Checking NFT ownership on Polygon network...');
+
+              for (let address of contractAddresses) {
+                let contract = new web3.eth.Contract(ABI, address);
+                let balance = await contract.methods.balanceOf(account).call();
+                if (parseInt(balance) > 0) {
+                  return true; // Account owns NFTs
+                }
+              }
+              return false; // No NFTs found
+            }
+
+            async function connectWallet(buttonTextId, connectButtonId) {
+              const buttonText = document.getElementById(buttonTextId);
+              const connectButton = document.getElementById(connectButtonId);
+              const cardSection3 = document.getElementById('card-3'); // Reference to Card-3 section
+              const cardSection4 = document.getElementById('card-4'); // Reference to Card-4 section
+              const accountRequiredSection = document.getElementById('account-required'); // Account-required section
+
+              if (!connectButton || !cardSection3 || !cardSection4) {
+                console.error('Connect button or card sections not found!');
+                return;
+              }
+
+              if (typeof window.ethereum !== 'undefined') {
+                try {
+                  const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+                  let connectedAccount;
+
+                  if (accounts.length === 0) {
+                    const requestedAccounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    connectedAccount = requestedAccounts[0];
+                  } else {
+                    connectedAccount = accounts[0];
+                  }
+
+                  console.log('Connected account:', connectedAccount);
+                  localStorage.setItem('connectedAccount', connectedAccount);
+                  await updateButtonAndCardState(connectedAccount, buttonText, connectButton, cardSection3, cardSection4, accountRequiredSection);
+
+                } catch (error) {
+                  console.error('Error connecting to MetaMask or fetching data:', error);
+                  buttonText.textContent = 'Access Limited';
+                  connectButton.style.backgroundColor = 'red';
+                  accountRequiredSection.style.display = 'block';
+                }
+              } else {
+                alert('MetaMask is not installed. Please install it from https://metamask.io/');
+                buttonText.textContent = 'Access Limited';
+                connectButton.style.backgroundColor = 'red';
+                accountRequiredSection.style.display = 'block';
+              }
+            }
+
+            async function updateButtonAndCardState(connectedAccount, buttonText, connectButton, cardSection3, cardSection4, accountRequiredSection) {
+              buttonText.textContent = 'Checking NFTs...';
+              const hasNFT = await checkNftOwnership(connectedAccount);
+
+              if (hasNFT) {
+                buttonText.textContent = 'Access Granted';
+                connectButton.style.backgroundColor = 'green';
+                accountRequiredSection.style.display = 'none';
+                cardSection3.style.display = 'block'; // Show Card-3
+                cardSection4.style.display = 'block'; // Show Card-4
+              } else {
+                buttonText.textContent = 'Access Limited';
+                connectButton.style.backgroundColor = 'red';
+                accountRequiredSection.style.display = 'block';
+                cardSection3.style.display = 'none'; // Hide Card-3
+                cardSection4.style.display = 'none'; // Hide Card-4
+                localStorage.removeItem('connectedAccount');
+              }
+            }
+
+            async function switchToPolygonNetwork() {
+              try {
+                await window.ethereum.request({
+                  method: 'wallet_switchEthereumChain',
+                  params: [{ chainId: POLYGON_CHAIN_ID }],
+                });
+              } catch (switchError) {
+                if (switchError.code === 4902) {
+                  try {
+                    await window.ethereum.request({
+                      method: 'wallet_addEthereumChain',
+                      params: [
+                        {
+                          chainId: POLYGON_CHAIN_ID,
+                          chainName: 'Polygon Mainnet',
+                          rpcUrls: [POLYGON_RPC_URL],
+                          nativeCurrency: {
+                            name: 'MATIC',
+                            symbol: 'MATIC',
+                            decimals: 18,
+                          },
+                          blockExplorerUrls: ['https://polygonscan.com/'],
+                        },
+                      ],
+                    });
+                  } catch (addError) {
+                    console.error('Failed to add Polygon network to MetaMask:', addError);
+                    throw addError;
+                  }
+                } else {
+                  console.error('Failed to switch to the Polygon network:', switchError);
+                  throw switchError;
+                }
+              }
+            }
+
+            async function handleAccountChanged(accounts) {
+              const connectedAccount = accounts[0];
+              const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+              const buttonTextMobile = document.getElementById('buttonTextMobile');
+              const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+              const connectButtonMobile = document.getElementById('connectButtonMobile');
+              const accountRequiredSection = document.getElementById('account-required');
+
+              if (!connectButtonDesktop || !connectButtonMobile) {
+                console.error('One or both of the connect buttons are missing from the DOM.');
+                return;
+              }
+
+              if (connectedAccount) {
+                const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+                if (chainId !== POLYGON_CHAIN_ID) {
+                  await switchToPolygonNetwork();
+                }
+
+                const hasNFT = await checkNftOwnership(connectedAccount);
+                if (hasNFT) {
+                  accountRequiredSection.style.display = 'none';
+                } else {
+                  accountRequiredSection.style.display = 'block';
+                }
+                updateConnectButton(hasNFT, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile);
+              }
+            }
+
+            function updateConnectButton(hasAccess, buttonTextDesktop, buttonTextMobile, connectButtonDesktop, connectButtonMobile) {
+              if (hasAccess) {
+                buttonTextDesktop.textContent = 'Access Granted';
+                buttonTextMobile.textContent = 'Access Granted';
+                connectButtonDesktop.style.backgroundColor = 'green';
+                connectButtonMobile.style.backgroundColor = 'green';
+              } else {
+                buttonTextDesktop.textContent = 'Access Limited';
+                buttonTextMobile.textContent = 'Access Limited';
+                connectButtonDesktop.style.backgroundColor = 'red';
+                connectButtonMobile.style.backgroundColor = 'red';
+                document.getElementById('account-required').style.display = 'block';
+              }
+            }
+
+            async function disconnectWallet() {
+              const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+              const buttonTextMobile = document.getElementById('buttonTextMobile');
+              const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+              const connectButtonMobile = document.getElementById('connectButtonMobile');
+
+              buttonTextDesktop.textContent = 'Connect Wallet';
+              buttonTextMobile.textContent = 'Connect Wallet';
+              connectButtonDesktop.style.backgroundColor = '';
+              connectButtonMobile.style.backgroundColor = '';
+
+              localStorage.removeItem('connectedAccount');
+            }
+
+            window.addEventListener('load', async function () {
+              const connectedAccount = localStorage.getItem('connectedAccount');
+              const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+              const buttonTextMobile = document.getElementById('buttonTextMobile');
+              const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+              const connectButtonMobile = document.getElementById('connectButtonMobile');
+              const accountRequiredSection = document.getElementById('account-required');
+              const cardSection3 = document.getElementById('card-3');
+              const cardSection4 = document.getElementById('card-4');
+
+              if (connectedAccount) {
+                buttonTextDesktop.textContent = 'Checking NFTs...';
+                buttonTextMobile.textContent = 'Checking NFTs...';
+
+                const hasNFT = await checkNftOwnership(connectedAccount);
+                if (hasNFT) {
+                  accountRequiredSection.style.display = 'none';
+                  cardSection3.style.display = 'block';
+                  cardSection4.style.display = 'block';
+                } else {
+                  accountRequiredSection.style.display = 'block';
+                  cardSection3.style.display = 'none';
+                  cardSection4.style.display = 'none';
+                }
+
+                await handleAccountChanged([connectedAccount]);
+              } else {
+                buttonTextDesktop.textContent = 'Connect Wallet';
+                buttonTextMobile.textContent = 'Connect Wallet';
+
+                accountRequiredSection.style.display = 'block';
+                cardSection3.style.display = 'none';
+                cardSection4.style.display = 'none';
+              }
+
+              if (window.ethereum) {
+                window.ethereum.on('accountsChanged', async (accounts) => {
+                  await disconnectWallet();
+                  await handleAccountChanged(accounts);
+                });
+                window.ethereum.on('chainChanged', async () => {
+                  try {
+                    await switchToPolygonNetwork();
+                    const connectedAccount = localStorage.getItem('connectedAccount');
+                    if (connectedAccount) {
+                      const hasNFT = await checkNftOwnership(connectedAccount);
+                      if (hasNFT) {
+                        accountRequiredSection.style.display = 'none';
+                        cardSection3.style.display = 'block';
+                        cardSection4.style.display = 'block';
+                      } else {
+                        accountRequiredSection.style.display = 'block';
+                        cardSection3.style.display = 'none';
+                        cardSection4.style.display = 'none';
+                      }
+                      await handleAccountChanged([connectedAccount]);
+                    }
+                  } catch (error) {
+                    console.error('Error handling chain change:', error);
+                  }
+                });
+              }
+            });
+
+            window.addEventListener('DOMContentLoaded', function () {
+              document.getElementById('connectButtonDesktop').addEventListener('click', function () {
+                connectWallet('buttonTextDesktop', 'connectButtonDesktop');
+              });
+
+              document.getElementById('connectButtonMobile').addEventListener('click', function () {
+                connectWallet('buttonTextMobile', 'connectButtonMobile');
+              });
+            });
+          </script>
+
+
+
+         <!--Header End-->
+
+         <!-- Breadcrumbs Section Start -->
+         <div class="gamfi-breadcrumbs-section">
+           <div class="container">
+             <div class="row">
+               <div class="col-lg-5">
+                 <div class="breadcrumbs-area sec-heading">
+                   <div class="sub-inner mb-15 mt-35">
+                   </div>
+                   <h2 class="title mb-0">COPY TRADE STRATEGIES</h2>
+                 </div>
+               </div>
+
+             </div>
+           </div>
+         </div>
+         <!-- Breadcrumbs  Section End -->
+
+    <!-- Tied Start -->
+  <div id="account-required" class="gamfi_tier_sect" style="display: none;">
+    <div style="background: #090A1A">
+      <div class="py-5">
+        <div class="container">
+          <div class="p-4 bg-standard" style="background: #15182b;">
+            <div class="d-flex align-items-center">
+              <div class="mx-5">
+                <i class="fa fa-ban text-danger" style="font-size: 100px;"></i>
+              </div>
+              <div>
+                <h4 class="text-danger">ACCOUNT REQUIRED</h4>
+                <p class="lead">You must be logged in to access this page.</p>
+                <a href="https://mutoco.tech/shop.html">
+                  <i class="fa fa-arrow-right fa-sm me-2"></i> Return to Home Page
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Tied End -->
+
+  <!-- Two-Column Section Start -->
+  <div id="card-4" class="card-4" style="max-width: 900px; margin: 75px auto 66px auto; padding: 50px; border: 3px solid #19371a; border-radius: 10px;background-color: #0e0d1f; display: none;"> <!-- Initially hidden -->
+    <div class="row align-items-start g-5"> <!-- g-5 adds gutter space between columns -->
+
+      <!-- Column 1: Image -->
+      <div class="col-md-6 mb-4 mt-4 mb-md-0 text-center">
+        <img src="assets/images/ApolloFinal.png" alt="Image Placeholder" class="img-fluid rounded shadow" style="width: auto; height: auto; object-fit: cover; margin: 0 auto;">
+      </div>
+
+      <!-- Column 2: Tab Content -->
+      <div class="col-md-6">
+        <h3 style="color:#a3ff12;font-size: 24px;">ULTRA LOW RISK STRATEGY 1</h3>
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">AI Copy Trade</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">AI Apollon Project</button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-4" id="myTabContent">
+          <!-- Tab 1 Content -->
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+            <p>Copy Trading, unlike anything else we've introduced, can be found within the Bybit exchange. As the name suggests, you automatically follow the AI Apollon trades.</p>
+            <div class="buttons-container" style="display: inline-flex; flex-direction: row;">
+      <a class="readon black-shape apply-project-btn" href="https://partner.bybit.com/b/metadudesgr" style="margin-left:-7px;width: 174px;">
+          <span class="btn-text">BYBIT SIGN UP</span>
+          <span class="hover-shape1"></span>
+          <span class="hover-shape2"></span>
+          <span class="hover-shape3"></span>
+      </a>
+      <a class="readon white-btn hover-shape view-project-btn" href="https://i.bybit.com/26abzfGV?action=inviteToCopy">
+          <span class="btn-text">COPY NOW</span>
+          <span class="hover-shape1"></span>
+          <span class="hover-shape2"></span>
+          <span class="hover-shape3"></span>
+      </a>
+  </div>
+
+  <style>
+      /* Default styles for desktop (inline-flex) */
+      .buttons-container {
+          display: inline-flex;
+          flex-direction: row;
+      }
+
+      /* Stack buttons on mobile */
+      @media screen and (max-width: 768px) {
+          .buttons-container {
+              flex-direction: column !important; /* Stack vertically */
+              align-items: baseline;
+          }
+          .buttons-container a {
+              margin-bottom: 10px; /* Add space between the buttons */
+              width: 189px !important; /* Full width on mobile */
+              margin-left: 70px !important;
+          }
+      }
+  </style>
+
+        </div>
+          <!-- Tab 2 Content -->
+          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+            <!-- Include Font Awesome for icons (add this in the head) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Your content with bullet points -->
+  <ul class="custom-list">
+      <li>The APOLLON AI BOT is our low-risk strategy. It leverages major altcoins in derivatives trading while utilizing the necessary Take Profit and Stop Loss orders.</li>
+      <li style="font-size: 0.8em;">
+    <i class="fas fa-robot"></i>
+    Minimum amount for copy trading: <strong style="color: white;">$1,000 USDT</strong>
+</li>
+
+      <li style="font-size: 0.8em;"><i class="fas fa-robot"></i> Copy Trading AI Apollon Profile: <a href="https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=xZAV2gmqgLUhWKWo3C8OCA==">Bybit Profile</a></li>
+  </ul>
+
+  <style>
+      .custom-list {
+          list-style: none; /* Remove default bullet points */
+          padding-left: 0;  /* Remove left padding */
+      }
+
+      .custom-list li {
+          margin-bottom: 10px; /* Add space between list items */
+      }
+
+      .custom-list li i {
+          margin-right: 5px; /* Space between icon and text */
+          color: #008000; /* Optional: change icon color */
+          font-size: 1.3em;
+      }
+  </style>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Two-Column Section End -->
+
+  <!-- Two-Column Section Start -->
+  <div id="card-3" class="card-3 tooltip-container" style="max-width: 900px; margin: 75px auto 230px auto; padding: 50px; border: 3px solid #19371a; border-radius: 10px; background-color: #0e0d1f; display: none;">
+
+    <!-- Tooltip Element -->
+    <div class="tooltip-text">Coming Soon</div>
+
+    <div class="row align-items-start g-5"> <!-- g-5 adds gutter space between columns -->
+      <!-- Column 1: Image -->
+      <div class="col-md-6 mb-4 mt-4 mb-md-0 text-center">
+        <img src="assets/images/HermesFinal.png" alt="Image Placeholder" class="img-fluid rounded shadow" style="width: auto; height: auto; object-fit: cover; margin: 0 auto;">
+      </div>
+
+      <!-- Column 2: Tab Content -->
+      <div class="col-md-6">
+        <h3 style="color:#a3ff12;font-size: 24px;">LOW RISK STRATEGY 2</h3>
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="true">AI Copy Trade</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab" aria-controls="tab4" aria-selected="false">AI Hermes Project</button>
+          </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content mt-4" id="myTabContent">
+          <!-- Tab 1 Content -->
+          <div class="tab-pane fade show active" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+            <p>Copy Trading, unlike anything else we've introduced, can be found within the Bybit exchange. As the name suggests, you automatically follow the AI Apollon trades.</p>
+            <div class="buttons-container" style="display: inline-flex; flex-direction: row;">
+              <a class="readon black-shape apply-project-btn" href="https://partner.bybit.com/b/metadudesgr" style="margin-left:-7px;width: 174px;">
+                <span class="btn-text">BYBIT SIGN UP</span>
+                <span class="hover-shape1"></span>
+                <span class="hover-shape2"></span>
+                <span class="hover-shape3"></span>
+              </a>
+              <a class="readon white-btn hover-shape view-project-btn" href="https://i.bybit.com/26abzfGV?action=inviteToCopy">
+                <span class="btn-text">COPY NOW</span>
+                <span class="hover-shape1"></span>
+                <span class="hover-shape2"></span>
+                <span class="hover-shape3"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Tab 2 Content -->
+          <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+            <!-- Include Font Awesome for icons (add this in the head) -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+            <!-- Content with bullet points -->
+            <ul class="custom-list">
+              <li>The APOLLON AI BOT is our low-risk strategy. It leverages major altcoins in derivatives trading while utilizing the necessary Take Profit and Stop Loss orders.</li>
+              <li style="font-size: 0.8em;">
+                <i class="fas fa-robot"></i> Minimum amount for copy trading: <strong style="color: white;">$1,000 USDT</strong>
+              </li>
+              <li style="font-size: 0.8em;"><i class="fas fa-robot"></i> Copy Trading AI Apollon Profile: <a href="https://www.bybit.com/copyTrade/trade-center/detail?leaderMark=xZAV2gmqgLUhWKWo3C8OCA==">Bybit Profile</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tooltip CSS -->
+  <style>
+    .tooltip-container {
+      position: relative;
+    }
+    .tooltip-text {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      font-family: monospace;
+      z-index: 61;
+    }
+    .tooltip-container:hover .tooltip-text {
+      display: flex;
+    }
+  </style>
+
+
+
+
+<div class="gamfi-footer-section">
+
+
+            <div class="footer-area">
+                <div class="container">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52">
+                            <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+                                <div class="footer-listing text-center mb-100 md-mb-70 xs-mb-50">
+                                    <ul class="footer-icon-list">
+                                        <li><a href="https://x.com/MutocoTech"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://discord.gg/ehCmQCDNrC"><i class="fab fa-discord"></i></a></li>
+                                        <li><a href="https://medium.com/@mutocoweb3"><i class="fab fa-medium"></i></a></li>
+                                        <li><a href="https://github.com/MutocoWeb3Hub"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+
+                    <div class="footer-logo text-center mb-45">
+                       <a href="index.html">
+                            <img src="assets/images/logo.png" alt="Footer-logo" />
+                       </a>
+                    </div>
+
+                    <div class="copyright-area text-center mb-0">
+                        <p class="dsc mb-37">
+                            Copyright © 2024. All Rights Reserved by
+                            <a target="_blank" class="gafi" href="#">MUTOCO</a>
+                        </p>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#">
+                            <i class="icon-arrow_up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section End -->
+
+
+
+
+
+		<!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/metamaskhandler.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+
+	</body>
+</html>

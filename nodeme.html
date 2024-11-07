@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>MUTOCO - Nodeme</title>
+    <meta name="description" content="" />
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png" />
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <!-- magnific css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+    <!-- font awesome icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.gamfi-header-section.transparent-header {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    z-index: 12;
+}
+/* Flex-grow for the main content to take up available space */
+.main {
+    flex-grow: 1; /* Pushes footer to the bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Footer stays at the bottom of the page */
+.gamfi-footer-section {
+    margin-top: auto; /* Ensures the footer moves to the bottom of the page */
+    position: relative;
+    padding-top: 40px; /* Adds padding to create a gap between content and footer */
+    background-color: #0a0a0a; /* Adjust the background color as necessary */
+    color: white;
+}
+.gamfi-breadcrumbs-section {
+    background: url(assets/images/bg/breadcrumbs-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.bg-standard, .tab-content, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background: rgba(30, 31, 53, 0.8);
+}
+.gamfi-explore-content {
+  padding-left: 220px;
+  padding-right: 220px;
+}
+@media (max-width: 768px) { /* Tablet and below */
+   .gamfi-explore-content {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+ }
+
+ @media (max-width: 480px) { /* Mobile */
+   .gamfi-explore-content {
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+ }
+ @media (max-width: 768px) { /* Tablet and below */
+    .title.mb-0 {
+    text-align: left;
+    }
+  }
+  /* Media queries for responsiveness */
+@media (max-width: 991.98px) {
+  #account-required .d-flex {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  #account-required .mx-5 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px; /* Add some space at the bottom */
+  }
+
+  #account-required i.fa-ban {
+    font-size: 80px; /* Slightly reduce icon size for tablets */
+  }
+}
+
+@media (max-width: 575.98px) {
+  #account-required .p-4 {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  #account-required i.fa-ban {
+    font-size: 60px; /* Further reduce icon size for mobiles */
+  }
+
+  #account-required .text-danger {
+    font-size: 24px; /* Adjust title size */
+  }
+
+  #account-required .lead {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+}
+.gamfi-header-section .right_menu_togle .close-btn .nav-close .line span {
+    background: #ffffff;
+}
+</style>
+</head>
+
+<style>
+
+.main {
+  flex-grow: 1; /* Allows the main section to take up the remaining space */
+  display: flex;
+}
+</style>
+
+<body>
+
+    <!--Preloader area start here-->
+    <div class="loader_first">
+        <div class="circular-spinner"></div>
+    </div>
+    <!--Preloader area End here-->
+
+    <!--Header Start-->
+    <header id="gamfi-header" class="gamfi-header-section transparent-header">
+      <div class="menu-area menu-sticky">
+        <div class="container">
+          <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+            <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+              <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
+              </div>
+              <div class="header-menu">
+                <ul class="nav-menu">
+
+
+                </ul>
+              </div>
+            </div>
+            <div class="gamfi-btn-area">
+              <ul>
+                <li>
+                  <a id="nav-expander" class="nav-expander bar" href="#">
+                    <div class="bar">
+                      <span class="dot1"></span>
+                      <span class="dot2"></span>
+                      <span class="dot3"></span>
+                    </div>
+                  </a>
+                </li>
+                <li class="buy-token">
+                  <a class="readon black-shape" href="dashboard.html">
+                    <span class="btn-text">DASHBOARD</span>
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                  </a>
+
+                </li>
+                <!-- Desktop Connect Button -->
+                <li class="connect-btn-wrapper">
+                  <button id="connectButtonDesktop" class="connect-btn readon white-btn hover-shape">
+                    <img src="assets/images/icons/connect.png" alt="Icon">
+                    <span id="buttonTextDesktop" class="btn-text">Connect Wallet</span>
+                    <span class="hover-shape1"></span>
+                    <span class="hover-shape2"></span>
+                    <span class="hover-shape3"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canvas Mobile Menu start -->
+      <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+        <div class="close-btn">
+          <a id="nav-close2" class="nav-close">
+            <div class="line">
+              <span class="line1"></span>
+              <span class="line2"></span>
+            </div>
+          </a>
+        </div>
+        <div class="sidebar-logo mb-20">
+          <a href="index.html"><img src="assets/images/fav.png" alt=""></a>
+        </div>
+        <ul class="nav-menu">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <!-- Mobile Connect Button -->
+          <li class="connect-btn-wrapper">
+            <button type="button" id="connectButtonMobile" class="connect-btn readon hover-shape">
+              <img src="assets/images/icons/connect.png" alt="Icon">
+              <span id="buttonTextMobile" class="btn-text" style="color:black;">Connect Wallet</span>
+              <span class="hover-shape1"></span>
+              <span class="hover-shape2"></span>
+              <span class="hover-shape3"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+     <!--Header End-->
+     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+     <script>
+       const POLYGON_CHAIN_ID = '0x89'; // Polygon mainnet chain ID
+       const POLYGON_RPC_URL = 'https://polygon-rpc.com'; // Updated RPC URL
+
+       async function checkNftOwnership(account) {
+         const contractAddresses = [
+           "0x0ff1e228e6a95aa69c76bdcb366e3e6fe1a614d3", // Example contract address 1
+           "0x5164c0f7a1f2f68b266feeccca0ced8e6ed68166"  // Example contract address 2
+         ];
+
+         const ABI = [
+           {
+             "constant": true,
+             "inputs": [{"name": "_owner", "type": "address"}],
+             "name": "balanceOf",
+             "outputs": [{"name": "", "type": "uint256"}],
+             "type": "function"
+           }
+         ];
+
+         let web3 = new Web3(new Web3.providers.HttpProvider(POLYGON_RPC_URL));
+         console.log('Checking NFT ownership on Polygon network...');
+
+         for (let address of contractAddresses) {
+           let contract = new web3.eth.Contract(ABI, address);
+           let balance = await contract.methods.balanceOf(account).call();
+           console.log(`Contract: ${address}, Balance: ${balance}`);
+           if (parseInt(balance) > 0) {
+             return true; // Account owns NFTs
+           }
+         }
+         return false; // No NFTs found
+       }
+
+       async function connectWallet(buttonTextId, connectButtonId) {
+         const buttonText = document.getElementById(buttonTextId);
+         const connectButton = document.getElementById(connectButtonId);
+         const mainSection = document.getElementById('mainSection'); // Changed from breadcrumbs to mainSection
+         const accountRequired = document.getElementById('account-required'); // Account-required section
+
+         if (!connectButton || !mainSection || !accountRequired) {
+           console.error('Connect button, main section, or account-required section not found!');
+           return;
+         }
+
+         if (typeof window.ethereum !== 'undefined') {
+           try {
+             const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+             let connectedAccount;
+
+             if (accounts.length === 0) {
+               const requestedAccounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+               connectedAccount = requestedAccounts[0];
+             } else {
+               connectedAccount = accounts[0];
+             }
+
+             console.log('Connected account:', connectedAccount);
+             localStorage.setItem('connectedAccount', connectedAccount);
+             await updateButtonAndMainSectionState(connectedAccount, buttonText, connectButton, mainSection, accountRequired);
+
+           } catch (error) {
+             console.error('Error connecting to MetaMask or fetching data:', error);
+             buttonText.textContent = 'Access Limited';
+             connectButton.style.backgroundColor = 'red';
+             mainSection.style.display = 'none';
+             accountRequired.style.display = 'block'; // Show account-required section when access is limited
+           }
+         } else {
+           alert('MetaMask is not installed. Please install it from https://metamask.io/');
+           buttonText.textContent = 'Access Limited';
+           connectButton.style.backgroundColor = 'red';
+           mainSection.style.display = 'none';
+           accountRequired.style.display = 'block'; // Show account-required section when MetaMask is not installed
+         }
+       }
+
+       async function updateButtonAndMainSectionState(connectedAccount, buttonText, connectButton, mainSection, accountRequired) {
+         buttonText.textContent = 'Checking NFTs...';
+         const hasNFT = await checkNftOwnership(connectedAccount);
+
+         if (hasNFT) {
+           buttonText.textContent = 'Access Granted';
+           connectButton.style.backgroundColor = 'green';
+           mainSection.style.display = 'block';  // Show mainSection when access is granted
+           accountRequired.style.display = 'none'; // Hide account-required section
+         } else {
+           buttonText.textContent = 'Access Limited';
+           connectButton.style.backgroundColor = 'red';
+           mainSection.style.display = 'none';  // Hide mainSection when access is limited
+           accountRequired.style.display = 'block'; // Show account-required section
+           localStorage.removeItem('connectedAccount');
+         }
+       }
+
+       // Remaining functions stay the same (switchToPolygonNetwork, handleAccountChanged, updateConnectButton, disconnectWallet, etc.)
+
+       window.addEventListener('load', async function () {
+         const connectedAccount = localStorage.getItem('connectedAccount');
+         const buttonTextDesktop = document.getElementById('buttonTextDesktop');
+         const buttonTextMobile = document.getElementById('buttonTextMobile');
+         const connectButtonDesktop = document.getElementById('connectButtonDesktop');
+         const connectButtonMobile = document.getElementById('connectButtonMobile');
+         const mainSection = document.getElementById('mainSection'); // Main section
+         const accountRequired = document.getElementById('account-required'); // Account-required section
+
+         if (connectedAccount) {
+           buttonTextDesktop.textContent = 'Checking NFTs...';
+           buttonTextMobile.textContent = 'Checking NFTs...';
+
+           // Perform NFT check and update mainSection visibility
+           const hasNFT = await checkNftOwnership(connectedAccount);
+           if (hasNFT) {
+             mainSection.style.display = 'block'; // Show mainSection if NFT is owned
+             accountRequired.style.display = 'none'; // Hide account-required section
+           } else {
+             mainSection.style.display = 'none';  // Hide if no NFT
+             accountRequired.style.display = 'block'; // Show account-required section
+           }
+
+           await handleAccountChanged([connectedAccount]);
+         } else {
+           buttonTextDesktop.textContent = 'Connect Wallet';
+           buttonTextMobile.textContent = 'Connect Wallet';
+           mainSection.style.display = 'none'; // Hide mainSection if no account connected
+           accountRequired.style.display = 'block'; // Show account-required section if no account connected
+         }
+
+         if (window.ethereum) {
+           window.ethereum.on('accountsChanged', async (accounts) => {
+             await disconnectWallet();
+             await handleAccountChanged(accounts);
+           });
+           window.ethereum.on('chainChanged', async () => {
+             try {
+               await switchToPolygonNetwork();
+               const connectedAccount = localStorage.getItem('connectedAccount');
+               if (connectedAccount) {
+                 const hasNFT = await checkNftOwnership(connectedAccount);
+                 if (hasNFT) {
+                   mainSection.style.display = 'block'; // Ensure mainSection shows after chain change
+                   accountRequired.style.display = 'none'; // Hide account-required section
+                 } else {
+                   mainSection.style.display = 'none';
+                   accountRequired.style.display = 'block'; // Show account-required section if no NFT
+                 }
+                 await handleAccountChanged([connectedAccount]);
+               }
+             } catch (error) {
+               console.error('Error handling chain change:', error);
+             }
+           });
+         }
+       });
+
+       window.addEventListener('DOMContentLoaded', function () {
+         document.getElementById('connectButtonDesktop').addEventListener('click', function () {
+           connectWallet('buttonTextDesktop', 'connectButtonDesktop');
+         });
+
+         document.getElementById('connectButtonMobile').addEventListener('click', function () {
+           connectWallet('buttonTextMobile', 'connectButtonMobile');
+         });
+       });
+     </script>
+
+    <!--Header End-->
+
+    <!-- Breadcrumbs Section Start -->
+    <div class="gamfi-breadcrumbs-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs-area sec-heading">
+                        <div class="sub-inner mb-15 mt-35"></div>
+
+                        <!-- Row for NMD Live Nodes and 5/8 Nodes Running -->
+                        <div class="row">
+                            <!-- Left side for NMD Live Nodes -->
+                            <div class="col-lg-6 col-md-6">
+                                <h2 class="title mb-0">NMD Live Nodes</h2>
+                                <h5 class="title mb-0">The available rewards will be updated every Sunday.</h5>
+                            </div>
+
+                            <!-- Right side for 5/8 Nodes Running -->
+                            <div class="col-lg-6 col-md-6 text-lg-right text-md-right text-left" style="text-align: right;">
+                                <h3 class="title mb-0">5/8 Nodes Running</h3>
+                            </div>
+                        </div>
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumbs  Section End -->
+
+
+    <!-- Tied Start -->
+  <div id="account-required" class="gamfi_tier_sect" style="display: none;">
+    <div style="background: #090A1A">
+      <div class="py-5">
+        <div class="container">
+          <div class="p-4 bg-standard" style="background: #15182b;text-align: center;">
+            <div class="d-flex align-items-center">
+              <div class="mx-5">
+                <i class="fa fa-ban text-danger" style="font-size: 100px;"></i>
+              </div>
+              <div>
+                <h4 class="text-danger">ACCOUNT REQUIRED</h4>
+                <p class="lead">You must be logged in to access this page.</p>
+                <a href="https://mutoco.tech/shop.html">
+                  <i class="fa fa-arrow-right fa-sm me-2"></i> Return to Shop Page
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Tied End -->
+
+
+    <!-- Breadcrumbs Section Start -->
+    <div id="mainSection">
+      <div class="row mt-2">
+          <div class="col-12">
+              <h3 class="title mb-0" id="totalRewardsUSDT"style="text-align: center;">Available Rewards: 0</h3>
+          </div>
+      </div>
+      <script>
+    // Function to fetch, calculate, and sum the total rewards in USDT from each node
+    function sumTotalRewardsInUSDT() {
+      const aethirUSDT = parseFloat(document.getElementById('totalRewardsAethirUSDT').innerText.replace(' USDT', '')) || 0;
+      const myriaUSDT = parseFloat(document.getElementById('totalRewardsMyriaUSDT').innerText.replace(' USDT', '')) || 0;
+      const topiaUSDT = parseFloat(document.getElementById('totalRewardsTOPIAUSDT').innerText.replace(' USDT', '')) || 0;
+      const playa3ullUSDT = parseFloat(document.getElementById('totalRewards3ULLUSDT').innerText.replace(' USDT', '')) || 0;
+      const galaxisUSDT = parseFloat(document.getElementById('totalRewardsGALAXISUSDT').innerText.replace(' USDT', '')) || 0;
+
+      // Sum the total USDT values
+      const totalUSDT = aethirUSDT + myriaUSDT + topiaUSDT + playa3ullUSDT + galaxisUSDT;
+
+      // Display the overall total in the designated area
+      document.getElementById('totalRewardsUSDT').innerText = `Available Rewards: ${totalUSDT.toFixed(2)}`;
+    }
+
+    // Call the sumTotalRewardsInUSDT function after each individual node's USDT calculation is completed
+    function updateUSDTAfterNodeCalculations() {
+      // Call this function after all node calculations are done
+      sumTotalRewardsInUSDT();
+    }
+
+    // Ensure to call the updateUSDTAfterNodeCalculations after all node prices are fetched and processed
+    </script>
+
+      <div class="gamfi-explore-content gamfi-previous-section pt-70 md-pt-80 pb-110 md-pb-50">
+
+            <div>
+
+
+              <div class="project_clasic_2_container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="project_clasic_2_container_left">
+                <div class="project_clasic_2_container_left_content">
+                  <div class="project_clasic_2_container_left_img">
+                    <img src="assets/images/project/aethirbanner.jpg" alt="img" class="img-fluid" />
+                  </div>
+                  <div class="project_clasic_2_left_content_img">
+                    <img src="assets/images/project/aethirlogo.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="project_clasic_2_container_right_sect">
+                <div class="project_clasic_2_container_right_headings">
+                  <h2><a href="https://www.aethir.com/">Aethir NODES</a></h2>
+                  <p id="priceAethir">Price = 0.0000 USDT</p> <!-- Unique ID for price -->
+                </div>
+
+                <!-- Script to fetch and display Aethir token price using CoinMarketCap API and calculate total rewards in USDT -->
+                <script>
+                  const API_KEY_COINMARKETCAP = '4fcf5702-3a00-4046-b26a-c79b1477c14b'; // CoinMarketCap API key
+                  const API_URL_COINMARKETCAP = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest';
+                  const TOKEN_SYMBOL_AETHIR = 'ATH'; // Correct Aethir token symbol
+                  const CURRENCY_AETHIR = 'USDT'; // Display price in USDT
+
+                  // Function to fetch the Aethir token price using CoinMarketCap API and calculate total rewards
+                  async function fetchAethirPriceAndConvertRewards() {
+                    try {
+                      const response = await fetch(`${API_URL_COINMARKETCAP}?symbol=${TOKEN_SYMBOL_AETHIR}&convert=${CURRENCY_AETHIR}`, {
+                        method: 'GET',
+                        headers: {
+                          'X-CMC_PRO_API_KEY': API_KEY_COINMARKETCAP,
+                          'Content-Type': 'application/json'
+                        }
+                      });
+
+                      if (!response.ok) {
+                        throw new Error(`Error: ${response.status} - ${response.statusText}`);
+                      }
+
+                      const data = await response.json();
+                      console.log("Response Data:", data); // Log for debugging
+
+                      if (data && data.data && data.data[TOKEN_SYMBOL_AETHIR] && data.data[TOKEN_SYMBOL_AETHIR].quote[CURRENCY_AETHIR].price) {
+                        const tokenPrice = data.data[TOKEN_SYMBOL_AETHIR].quote[CURRENCY_AETHIR].price;
+                        document.getElementById('priceAethir').innerText = `Price = ${tokenPrice.toFixed(4)} USDT`;
+
+                        // Get the ATH amount from the span element, convert it to a valid number
+                        const totalRewardsElement = document.getElementById('totalRewardsATH');
+                        const totalATHText = totalRewardsElement.innerText.replace(' ATH', '').replace(/\./g, '').replace(',', '.');
+                        const totalATH = parseFloat(totalATHText);
+
+                        if (isNaN(totalATH)) {
+                          throw new Error('Invalid rewards value');
+                        }
+
+                        // Calculate the equivalent value in USDT
+                        const totalInUSDT = totalATH * tokenPrice;
+
+                        // Update the span to show only the converted value in USDT in the totalRewardsAethirUSDT element
+                        const totalRewardsUSDTElement = document.getElementById('totalRewardsAethirUSDT');
+                        totalRewardsUSDTElement.innerText = `${totalInUSDT.toFixed(2)} USDT`;
+
+                        // Call the function to sum up the totals across all nodes
+                        updateUSDTAfterNodeCalculations();
+
+                      } else {
+                        throw new Error('Token not found in response');
+                      }
+                    } catch (error) {
+                      console.error('Error fetching price:', error);
+                      document.getElementById('priceAethir').innerText = 'Error fetching price';
+                      document.getElementById('totalRewardsAethirUSDT').innerText = 'Error calculating total';
+                    }
+                  }
+
+                  // Fetch price and convert rewards when the page loads
+                  fetchAethirPriceAndConvertRewards();
+                </script>
+
+                <div class="total_rised_progress_sect">
+                  <div class="total_rised_progress_headings">
+                    <h3>Total Nodes : <span>6</span></h3>
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>Node Price : <span>$1565 (tier12)</span></h3>
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>Total (VESTING) : <span style="color: #03a9f4;">30.615,76 ATH</span></h3>
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>Available Rewards : <span id="totalRewardsATH" style="color: #03a9f4;">2.560,00 ATH</span></h3> <!-- Unique ID for rewards -->
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>Total in USDT : <span id="totalRewardsAethirUSDT" style="color: #03a9f4;">0 USDT</span></h3> <!-- Show USDT only here -->
+                  </div>
+                  <hr>
+                  <div class="total_rised_progress_headings">
+                    <h3>STAKE AMOUNT : <span style="color: #03a9f4;">28.000 veATH (12 months)</span></h3>
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>STAKE PERIOD ENDS : <span style="color: #03a9f4;">06/19/2025</span></h3>
+                  </div>
+                  <div class="total_rised_progress_headings">
+                    <h3>STAKE REWARDS : <span style="color: #03a9f4;">2.064,39 ATH</span></h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+    <div class="project_clasic_2_container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project_clasic_2_container_left">
+            <div class="project_clasic_2_container_left_content">
+              <div class="project_clasic_2_container_left_img">
+                <img src="assets/images/project/hychainbanner.jpeg" alt="img" class="img-fluid" />
+              </div>
+              <div class="project_clasic_2_left_content_img">
+                <img src="assets/images/project/hychainlogo.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project_clasic_2_container_right_sect">
+            <div class="project_clasic_2_container_right_headings">
+              <h2><a href="https://www.hytopia.com/">Hytopia NODES</a></h2>
+              <p id="priceHytopia">Price = 0.0652 USDT</p> <!-- Unique ID for Hytopia price -->
+            </div>
+
+            <!-- Script to fetch and display Hytopia token price using LiveCoinWatch -->
+            <script>
+              const API_KEY_HYTOPIA = '1aef1105-c507-4ba1-9da9-b1d5d02fa0a2'; // LiveCoinWatch API key
+              const API_URL_HYTOPIA = 'https://api.livecoinwatch.com/coins/single';
+              const TOKEN_SYMBOL_HYTOPIA = '__TOPIA'; // Hytopia token symbol for LiveCoinWatch
+              const CURRENCY_HYTOPIA = 'USDT'; // Display price in USDT
+
+              // Function to fetch the Hytopia token price from LiveCoinWatch
+              async function fetchHytopiaPrice() {
+                try {
+                  const response = await fetch(API_URL_HYTOPIA, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'x-api-key': API_KEY_HYTOPIA
+                    },
+                    body: JSON.stringify({
+                      currency: CURRENCY_HYTOPIA,
+                      code: TOKEN_SYMBOL_HYTOPIA,
+                      meta: false
+                    })
+                  });
+
+                  if (!response.ok) {
+                    throw new Error('Error fetching the price');
+                  }
+
+                  const data = await response.json();
+
+                  if (data && data.rate) {
+                    const tokenPrice = data.rate;
+                    document.getElementById('priceHytopia').innerText = `Price = ${tokenPrice.toFixed(4)} USDT`;
+                  } else {
+                    throw new Error('Token not found in response');
+                  }
+                } catch (error) {
+                  console.error('Error:', error);
+                  document.getElementById('priceHytopia').innerText = 'Error fetching price';
+                }
+              }
+
+              // Initial fetch when the page loads
+              fetchHytopiaPrice();
+            </script>
+
+            <div class="total_rised_progress_sect">
+              <div class="total_rised_progress_headings">
+                <h3>Total Nodes : <span>20 (10+10)</span></h3>
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Node Price : <span>$680</span></h3>
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Total Rewards : <span id="totalRewardsTOPIA" style="color: #03a9f4;">54.612,18 TOPIA</span></h3> <!-- Unique ID for rewards -->
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Total in USDT: <span id="totalRewardsTOPIAUSDT" style="color: #03a9f4;">0 USDT</span></h3> <!-- Unique ID for USDT only -->
+              </div>
+
+              <!-- Script to fetch Hytopia token price and calculate total rewards in USDT -->
+              <script>
+                const API_KEY_TOPIA = '1aef1105-c507-4ba1-9da9-b1d5d02fa0a2'; // LiveCoinWatch API key
+                const API_URL_TOPIA = 'https://api.livecoinwatch.com/coins/single';
+                const TOKEN_SYMBOL_TOPIA = '__TOPIA'; // Correct token symbol for TOPIA on LiveCoinWatch
+                const CURRENCY_TOPIA = 'USDT'; // Convert to USDT
+
+                async function convertTotalRewardsToUSDT() {
+                  try {
+                    const response = await fetch(API_URL_TOPIA, {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                        'x-api-key': API_KEY_TOPIA
+                      },
+                      body: JSON.stringify({
+                        currency: CURRENCY_TOPIA,
+                        code: TOKEN_SYMBOL_TOPIA,
+                        meta: false
+                      })
+                    });
+
+                    if (!response.ok) {
+                      throw new Error('Error fetching the token price');
+                    }
+
+                    const data = await response.json();
+
+                    if (data && data.rate) {
+                      const tokenPrice = data.rate;
+
+                      // Get the amount from the span element and convert to float
+                      const totalRewardsElement = document.getElementById('totalRewardsTOPIA');
+                      const totalTOPIA = parseFloat(totalRewardsElement.innerText.replace(' TOPIA', '').replace(/\./g, '').replace(',', '.')); // Parse the number with European formatting
+
+                      // Calculate the equivalent value in USDT
+                      const totalInUSDT = totalTOPIA * tokenPrice;
+
+                      // Update the span to show both TOPIA and the converted value in USDT
+                      const totalRewardsUSDTElement = document.getElementById('totalRewardsTOPIAUSDT');
+                      totalRewardsUSDTElement.innerText = `${totalInUSDT.toFixed(2)} USDT`;
+
+                      // Call the function to sum up the totals across all nodes
+                      updateUSDTAfterNodeCalculations();
+
+                    } else {
+                      throw new Error('Token not found in response');
+                    }
+                  } catch (error) {
+                    console.error('Error:', error);
+                    document.getElementById('totalRewardsTOPIA').innerText = 'Error fetching price';
+                  }
+                }
+
+                // Fetch and convert the price once when the page loads
+                convertTotalRewardsToUSDT();
+              </script>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="project_clasic_2_container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project_clasic_2_container_left">
+            <div class="project_clasic_2_container_left_content">
+              <div class="project_clasic_2_container_left_img">
+                <img src="assets/images/project/myriabanner.jpg" alt="img" class="img-fluid" />
+              </div>
+              <div class="project_clasic_2_left_content_img">
+                <img src="assets/images/project/myrialogo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="project_clasic_2_container_right_sect">
+            <div class="project_clasic_2_container_right_headings">
+              <h2><a href="https://myria.com/">Myria NODES</a></h2>
+              <p id="priceMyria">Price = 0.0001 USDT</p> <!-- Unique ID for price -->
+            </div>
+
+            <!-- Script to fetch and display Myria token price using LiveCoinWatch API and calculate total rewards in USDT -->
+            <script>
+              const API_KEY_LIVECOINWATCH = '1aef1105-c507-4ba1-9da9-b1d5d02fa0a2'; // LiveCoinWatch API key
+              const API_URL_LIVECOINWATCH = 'https://api.livecoinwatch.com/coins/single';
+              const TOKEN_SYMBOL_MYRIA = '_MYRIA'; // Correct Myria token symbol for LiveCoinWatch
+              const CURRENCY_MYRIA = 'USDT'; // Display price in USDT
+
+              // Function to fetch the Myria token price using LiveCoinWatch API
+              async function fetchMyriaPriceAndConvertRewards() {
+                try {
+                  const response = await fetch(API_URL_LIVECOINWATCH, {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'x-api-key': API_KEY_LIVECOINWATCH
+                    },
+                    body: JSON.stringify({
+                      currency: CURRENCY_MYRIA,
+                      code: TOKEN_SYMBOL_MYRIA,
+                      meta: false
+                    })
+                  });
+
+                  const data = await response.json();
+                  console.log('LiveCoinWatch API Response:', data); // Log for debugging
+
+                  if (data && data.rate) {
+                    const tokenPrice = data.rate;
+                    document.getElementById('priceMyria').innerText = `Price = ${tokenPrice.toFixed(4)} USDT`;
+
+                    // Get the Myria rewards amount from the span element
+                    const totalRewardsElement = document.getElementById('totalRewardsMyria');
+                    const totalMYRIA = parseFloat(totalRewardsElement.innerText.replace(' MYRIA', '').replace(/\./g, '').replace(',', '.'));
+
+                    // Check if total rewards value is valid
+                    if (isNaN(totalMYRIA)) {
+                      throw new Error('Invalid rewards value');
+                    }
+
+                    // Calculate the equivalent value in USDT
+                    const totalInUSDT = totalMYRIA * tokenPrice;
+
+                    // Update the span to show only the converted value in USDT in the totalRewardsMyriaUSDT element
+                    document.getElementById('totalRewardsMyriaUSDT').innerText = `${totalInUSDT.toFixed(2)} USDT`;
+
+                    // Call the function to sum up the totals across all nodes
+                    updateUSDTAfterNodeCalculations();
+
+                  } else {
+                    throw new Error('Token not found in response');
+                  }
+                } catch (error) {
+                  console.error('Error:', error);
+                  document.getElementById('totalRewardsMyriaUSDT').innerText = 'Error fetching price';
+                }
+              }
+
+              // Fetch price and convert rewards when the page loads
+              fetchMyriaPriceAndConvertRewards();
+            </script>
+
+            <div class="total_rised_progress_sect">
+              <div class="total_rised_progress_headings">
+                <h3>Total Nodes : <span>7</span></h3>
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Node Price : <span>$6300</span></h3>
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Total Rewards : <span id="totalRewardsMyria" style="color: #03a9f4;">2087290 MYRIA</span></h3> <!-- Unique ID for rewards -->
+              </div>
+              <div class="total_rised_progress_headings">
+                <h3>Total in USDT : <span id="totalRewardsMyriaUSDT" style="color: #03a9f4;">0 USDT</span></h3> <!-- Show USDT only here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="project_clasic_2_container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_left">
+        <div class="project_clasic_2_container_left_content">
+          <div class="project_clasic_2_container_left_img">
+            <img src="assets/images/project/playabanner.jpg" alt="img" class="img-fluid" />
+          </div>
+          <div class="project_clasic_2_left_content_img">
+            <img src="assets/images/project/playalogo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_right_sect">
+        <div class="project_clasic_2_container_right_headings">
+          <h2><a href="https://playa3ull.games/">Playa3Bull NODES</a></h2>
+          <p id="pricePlaya3Bull">Price = 0.0001 USDT</p> <!-- Unique ID -->
+        </div>
+
+        <!-- Script to fetch and display Playa3Bull token price using LiveCoinWatch -->
+        <script>
+          const API_KEY_3ULL = '1aef1105-c507-4ba1-9da9-b1d5d02fa0a2'; // LiveCoinWatch API key
+          const API_URL_3ULL = 'https://api.livecoinwatch.com/coins/single';
+          const TOKEN_SYMBOL_3ULL = '3ULL'; // LiveCoinWatch code for Playa3Bull
+          const CURRENCY_3ULL = 'USDT'; // Display price in USDT
+
+          // Function to fetch the Playa3Bull token price from LiveCoinWatch
+          async function fetch3ULLPrice() {
+            try {
+              const response = await fetch(API_URL_3ULL, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'x-api-key': API_KEY_3ULL,
+                },
+                body: JSON.stringify({
+                  currency: CURRENCY_3ULL,
+                  code: TOKEN_SYMBOL_3ULL,
+                  meta: false
+                })
+              });
+
+              if (!response.ok) {
+                throw new Error('Error fetching the price');
+              }
+
+              const data = await response.json();
+              if (data && data.rate) {
+                const tokenPrice = data.rate;
+                document.getElementById('pricePlaya3Bull').innerText = `Price = ${tokenPrice.toFixed(4)} USDT`;
+              } else {
+                throw new Error('Token not found in response');
+              }
+            } catch (error) {
+              console.error('Error fetching price:', error);
+              document.getElementById('pricePlaya3Bull').innerText = 'Error fetching price';
+            }
+          }
+
+          // Initial fetch when the page loads
+          fetch3ULLPrice();
+        </script>
+
+        <div class="total_rised_progress_sect">
+          <div class="total_rised_progress_headings">
+            <h3>Total Nodes : <span>1</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Node Price : <span>$6600</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Total Rewards : <span id="totalRewards3ULL" style="color: #03a9f4;">212.505,03 3ULL</span></h3> <!-- Unique ID for rewards -->
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Total in USDT: <span id="totalRewards3ULLUSDT" style="color: #03a9f4;">0 USDT</span></h3> <!-- Unique ID for USDT only -->
+          </div>
+
+          <!-- Script to fetch Playa3Bull token price and calculate total rewards in USDT -->
+          <script>
+            async function convertTotalRewardsToUSDT() {
+              try {
+                const response = await fetch(API_URL_3ULL, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': API_KEY_3ULL
+                  },
+                  body: JSON.stringify({
+                    currency: CURRENCY_3ULL,
+                    code: TOKEN_SYMBOL_3ULL,
+                    meta: false
+                  })
+                });
+
+                if (!response.ok) {
+                  throw new Error('Error fetching the token price');
+                }
+
+                const data = await response.json();
+
+                if (data && data.rate) {
+                  const tokenPrice = data.rate;
+
+                  // Get the amount from the span element and properly format the number
+                  const totalRewardsElement = document.getElementById('totalRewards3ULL');
+                  const total3ULLText = totalRewardsElement.innerText.replace(' 3ULL', '').replace(/\./g, '').replace(',', '.'); // Correct parsing
+
+                  const total3ULL = parseFloat(total3ULLText); // Ensure the number is correctly parsed
+
+                  if (isNaN(total3ULL)) {
+                    console.error('Error parsing total 3ULL rewards');
+                    return;
+                  }
+
+                  // Calculate the equivalent value in USDT
+                  const totalInUSDT = total3ULL * tokenPrice;
+
+                  // Update the span to show only the converted value in USDT in the totalRewards3ULLUSDT element
+                  const totalRewardsUSDTElement = document.getElementById('totalRewards3ULLUSDT');
+                  totalRewardsUSDTElement.innerText = `${totalInUSDT.toFixed(2)} USDT`;
+
+                  // Call the function to sum up the totals across all nodes
+                  updateUSDTAfterNodeCalculations();
+
+                } else {
+                  throw new Error('Token not found in response');
+                }
+              } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('totalRewards3ULLUSDT').innerText = 'Error fetching price';
+              }
+            }
+
+            // Fetch and convert the price once when the page loads
+            convertTotalRewardsToUSDT();
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="project_clasic_2_container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_left">
+        <div class="project_clasic_2_container_left_content">
+          <div class="project_clasic_2_container_left_img">
+            <img src="assets/images/project/galaxisbanner.png" alt="img" class="img-fluid" />
+          </div>
+          <div class="project_clasic_2_left_content_img">
+            <img src="assets/images/project/galaxislogo.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_right_sect">
+        <div class="project_clasic_2_container_right_headings">
+          <h2><a href="https://galaxis-engines.com/">Galaxis NODES</a></h2>
+          <p id="priceGalaxis">Price = 0.0001 USDT</p> <!-- Unique ID -->
+        </div>
+
+        <!-- Script to fetch and display Galaxis token price using LiveCoinWatch -->
+        <script>
+          const API_KEY_GALAXIS = '1aef1105-c507-4ba1-9da9-b1d5d02fa0a2'; // LiveCoinWatch API key
+          const API_URL_GALAXIS = 'https://api.livecoinwatch.com/coins/single';
+          const TOKEN_SYMBOL_GALAXIS = 'GALAXIS'; // Galaxis token symbol for LiveCoinWatch
+          const CURRENCY_GALAXIS = 'USDT'; // Display price in USDT
+
+          // Function to fetch the Galaxis token price from LiveCoinWatch
+          async function fetchGalaxisPrice() {
+            try {
+              const response = await fetch(API_URL_GALAXIS, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  'x-api-key': API_KEY_GALAXIS
+                },
+                body: JSON.stringify({
+                  currency: CURRENCY_GALAXIS,
+                  code: TOKEN_SYMBOL_GALAXIS,
+                  meta: false
+                })
+              });
+
+              if (!response.ok) {
+                throw new Error('Error fetching the price');
+              }
+
+              const data = await response.json();
+
+              if (data && data.rate) {
+                const tokenPrice = data.rate;
+                document.getElementById('priceGalaxis').innerText = `Price = ${tokenPrice.toFixed(4)} USDT`;
+              } else {
+                throw new Error('Token not found in response');
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              document.getElementById('priceGalaxis').innerText = 'Error fetching price';
+            }
+          }
+
+          // Initial fetch when the page loads
+          fetchGalaxisPrice();
+        </script>
+
+        <div class="total_rised_progress_sect">
+          <div class="total_rised_progress_headings">
+            <h3>Total Nodes : <span>5</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Node Price : <span>$1029</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Total Rewards : <span id="totalRewardsGALAXIS" style="color: #03a9f4;">158577 GALAXIS</span></h3> <!-- Unique ID for rewards -->
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Total in USDT : <span id="totalRewardsGALAXISUSDT" style="color: #03a9f4;">0 USDT</span></h3> <!-- Unique ID for USDT only -->
+          </div>
+
+          <!-- Script to fetch Galaxis token price and calculate total rewards in USDT -->
+          <script>
+            async function convertTotalRewardsToUSDT() {
+              try {
+                const response = await fetch(API_URL_GALAXIS, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': API_KEY_GALAXIS
+                  },
+                  body: JSON.stringify({
+                    currency: CURRENCY_GALAXIS,
+                    code: TOKEN_SYMBOL_GALAXIS,
+                    meta: false
+                  })
+                });
+
+                if (!response.ok) {
+                  throw new Error('Error fetching the token price');
+                }
+
+                const data = await response.json();
+
+                if (data && data.rate) {
+                  const tokenPrice = data.rate;
+
+                  // Get the amount from the span element and convert to float
+                  const totalRewardsElement = document.getElementById('totalRewardsGALAXIS');
+                  const totalGLX = parseFloat(totalRewardsElement.innerText.replace(' GALAXIS', '').replace(/,/g, '')); // Parse the number
+
+                  // Calculate the equivalent value in USDT
+                  const totalInUSDT = totalGLX * tokenPrice;
+
+                  // Update the span to show both GALAXIS and the converted value in USDT
+                  const totalRewardsUSDTElement = document.getElementById('totalRewardsGALAXISUSDT');
+                  totalRewardsUSDTElement.innerText = `${totalInUSDT.toFixed(2)} USDT`;
+
+                  // Call the function to sum up the totals across all nodes
+                  updateUSDTAfterNodeCalculations();
+
+                } else {
+                  throw new Error('Token not found in response');
+                }
+              } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('totalRewardsGALAXIS').innerText = 'Error fetching price';
+              }
+            }
+
+            // Fetch and convert the price once when the page loads
+            convertTotalRewardsToUSDT();
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="project_clasic_2_container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_left">
+        <div class="project_clasic_2_container_left_content">
+          <div class="project_clasic_2_container_left_img">
+            <img src="assets/images/project/cryptopiabanner.jpg" alt="img" class="img-fluid" />
+          </div>
+          <div class="project_clasic_2_left_content_img">
+            <img src="assets/images/project/cryptopialogo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="project_clasic_2_container_right_sect">
+        <div class="project_clasic_2_container_right_headings">
+          <h2><a href="https://cryptopia.com/">Cryptopia NODES</a></h2>
+          <p id="priceCryptopia">Price = 0.0000 USD</p> <!-- Display native token price -->
+        </div>
+
+        <!-- Script to fetch and display Cryptopia token price using CoinMarketCap API -->
+        <script>
+        const API_KEY_CRYPTOPIA = '4fcf5702-3a00-4046-b26a-c79b1477c14b'; // CoinMarketCap API key
+        const API_URL_CRYPTOPIA = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest';
+        const TOKEN_SYMBOL_CRYPTOPIA = 'TOS'; // Use Cryptopia's token symbol on CoinMarketCap
+        const CURRENCY_CRYPTOPIA = 'USD'; // Display price in USD
+
+        // Function to fetch Cryptopia token price using CoinMarketCap API
+        async function fetchCryptopiaPrice() {
+          try {
+            const response = await fetch(`${API_URL_CRYPTOPIA}?symbol=${TOKEN_SYMBOL_CRYPTOPIA}&convert=${CURRENCY_CRYPTOPIA}`, {
+              method: 'GET',
+              headers: {
+                'X-CMC_PRO_API_KEY': API_KEY_CRYPTOPIA,
+                'Content-Type': 'application/json'
+              }
+            });
+
+            // Check if the response is OK (status 200-299)
+            if (!response.ok) {
+              throw new Error(`Error fetching price: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+            console.log("CoinMarketCap API Response:", data); // Log for debugging
+
+            // Check if price data is available
+            if (data && data.data && data.data[TOKEN_SYMBOL_CRYPTOPIA] && data.data[TOKEN_SYMBOL_CRYPTOPIA].quote[CURRENCY_CRYPTOPIA].price) {
+              const tokenPrice = data.data[TOKEN_SYMBOL_CRYPTOPIA].quote[CURRENCY_CRYPTOPIA].price;
+              document.getElementById('priceCryptopia').innerText = `Price = ${tokenPrice.toFixed(4)} USD`;
+            } else {
+              throw new Error('Price not found in response');
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('priceCryptopia').innerText = 'Error fetching price';
+          }
+        }
+
+        // Fetch the price when the page loads
+        fetchCryptopiaPrice();
+        </script>
+
+        <div class="total_rised_progress_sect">
+          <div class="total_rised_progress_headings">
+            <h3>Total Nodes : <span>5</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Node Price : <span>$3000</span></h3>
+          </div>
+          <div class="total_rised_progress_headings">
+            <h3>Total Rewards : <span>N/A</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+                <div class="project_clasic_2_container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="project_clasic_2_container_left">
+                                <div class="project_clasic_2_container_left_content">
+                                    <div class="project_clasic_2_container_left_img">
+                                        <img src="assets/images/project/kipbanner.png" alt="img" class="img-fluid" />
+                                    </div>
+                                    <div class="project_clasic_2_left_content_img">
+                                        <img src="assets/images/project/kiplogo.jpeg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project_clasic_2_container_right"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project_clasic_2_container_right_sect">
+                                <div class="project_clasic_2_container_right_headings">
+                                    <h2><a href="https://www.kip.pro/">KIP NODES</a></h2>
+                                    <p>Price =  N/A</p>
+                                </div>
+                                <div class="total_rised_progress_sect">
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Total Nodes : <span>10</span></h3>
+                                    </div>
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Node Price : <span>$470</span></h3>
+                                    </div>
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Total Rewards : <span>N/A KIP</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project_clasic_2_container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="project_clasic_2_container_left">
+                                <div class="project_clasic_2_container_left_content">
+                                    <div class="project_clasic_2_container_left_img">
+                                        <img src="assets/images/project/starmechbanner.png" alt="img" class="img-fluid" />
+                                    </div>
+                                    <div class="project_clasic_2_left_content_img">
+                                        <img src="assets/images/project/starmechlogo.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project_clasic_2_container_right"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project_clasic_2_container_right_sect">
+                                <div class="project_clasic_2_container_right_headings">
+                                    <h2><a href="https://starmech.io/">StarMech NODES</a></h2>
+                                    <p>Price =  N/A</p>
+                                </div>
+                                <div class="total_rised_progress_sect">
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Total Nodes : <span>20</span></h3>
+                                    </div>
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Node Price : <span>$210</span></h3>
+                                    </div>
+                                    <div class="total_rised_progress_headings">
+                                        <h3>Total Rewards : <span>35,987 STA</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional content -->
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- Breadcrumbs Section End -->
+
+        <main class="main">
+
+          </main>
+
+      <!-- Footer Section Start -->
+      <div class="gamfi-footer-section">
+
+        <div class="footer-area">
+            <div class="container">
+                <div class="sec-heading text-center">
+                    <div class="sub-inner mb-52">
+                        <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                        <span class="sub-title white-color">Find us on Social</span>
+                        <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                    </div>
+                </div>
+                <div class="footer-listing text-center mb-100 md-mb-70">
+                    <ul class="footer-icon-list">
+                        <li>
+                            <a href="#">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-medium"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-discord"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-logo text-center mb-45">
+                   <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Footer-logo" />
+                   </a>
+                </div>
+
+                <div class="copyright-area text-center mb-0">
+                    <p class="dsc mb-37">
+                        Copyright © 2022. All Rights Reserved by
+                        <a target="_blank" class="gafi" href="#">MUTOCO</a>
+                    </p>
+                </div>
+                <div class="scrollup text-center">
+                    <a href="#">
+                        <i class="icon-arrow_up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+
+
+    <!-- Meta Mask Connect -->
+    <script src="assets/js/web3.min.js"></script>
+    <script src="assets/js/metamask.js"></script>
+
+    <!-- modernizr js -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap v4.4.1 js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- popup.min js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- counter top js -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Time Counter js -->
+    <script src="assets/js/time-counter.js"></script>
+    <!-- plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/metamaskhandler.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
